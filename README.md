@@ -45,7 +45,9 @@
 
 			5. we show BERT (pretrained model) is able to improve the accuracy to 90.4%
 
-			6. we use back-translation, label smoothing, cyclical lr as training helpers
+			6. we show RoBERTa (pretrained model) is able to improve the accuracy to 91.1%
+
+			7. we use back-translation, label smoothing, cyclical lr as training helpers
 			```
 
 		* 微众银行智能客服（Chinese Data）
