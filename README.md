@@ -63,13 +63,13 @@
 
 			Reflection:
 
-			we process text on character level and have not considered the word boundary information
+				we process text on char level and have not considered the word boundary information
 
-			because word segmentation can bring segmentation errors (but less sequential path)
+				because word segmentation can bring segmentation errors (but less sequential path)
 
-			BERT implicitly considers the word boundary information in its pretraining process
+				BERT implicitly considers the word boundary information in its pretraining process
 
-			perhaps this is one of the reasons of its empirical improvement
+				perhaps this is one of the reasons of its empirical improvement
 			```
 
 	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
