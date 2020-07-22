@@ -52,6 +52,20 @@
 
 		* 微众银行智能客服（Chinese Data）
 
+			```
+			Abstract:
+
+			1. we show ESIM, Pyramid, RE2 are able to reach 82.5% ~ 82.9% accuracy (very close)
+
+			2. we show RE2 is able to be improved to 83.8% by using cyclical lr and label smoothing
+
+			3. we show BERT (pretrained model) is able to improve the accuracy to 84.75%
+
+			Problem:
+
+			we encode texts on character level and have not considered word boundary information
+			```
+
 	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
 
 		* ATIS（English Data）
