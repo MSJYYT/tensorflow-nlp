@@ -61,15 +61,13 @@
 
 			3. we show BERT (pretrained model) is able to further improve the accuracy to 84.75%
 
-			Reflection:
+			Thinking:
 
 			   we process text on char level and have not considered the word boundary information
 
 			because word segmentation can bring segmentation errors (but less sequential path)
 
 			BERT implicitly considers the word boundary information in its pretraining process
-
-			perhaps this is one of the reasons of its empirical improvement
 			```
 
 	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
