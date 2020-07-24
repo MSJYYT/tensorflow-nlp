@@ -476,10 +476,9 @@
 	│   └── slot.txt                      # list of slots in vocabulary
 	│	
 	└── main              
-		└── bigru.ipynb               # step 2. train and evaluate model
-		└── bigru_self_attn.ipynb     # step 2. train and evaluate model
-		└── transformer.ipynb         # step 2. train and evaluate model
-		└── transformer_elu.ipynb     # step 2. train and evaluate model
+		└── bigru_clr.ipynb               # step 2. train and evaluate model
+		└── bigru_self_attn_clr.ipynb     # step 2. train and evaluate model
+		└── bigru_clr_crf.ipynb           # step 2. train and evaluate model
 ```
 
 * Task: [ATIS](https://github.com/yvchen/JointSLU/tree/master/data)（English Data） 
@@ -494,8 +493,16 @@
 	
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/vocab/word.txt)
 
-	* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
+	* Model: Conditional Random Fields
 	
+		* [CRFsuite](http://www.chokkan.org/software/crfsuite/) + [pycrfsuite](https://github.com/scrapinghub/python-crfsuite)
+
+			* [\<Notebook> CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) 
+			
+			  92% Slot Micro-F1 on Testing Data
+
+	* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
+
 		* TensorFlow 2
 
 			* [\<Notebook> Bi-GRU](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr.ipynb) 
