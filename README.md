@@ -99,7 +99,7 @@
 
 			   for the first stage, we show bi-gru retrieves entities at 79.6% recall and 42.6% exact match
 
-			   then we show bert improves this retrieving task to 93.6% recall and 71.6 exact match
+			   then we show bert is able to improve this retrieving task to 93.6% recall and 71.6% exact match
 			```
 
 	* [Semantic Parsing（语义解析）](https://github.com/zhedongzheng/finch#semantic-parsing)
