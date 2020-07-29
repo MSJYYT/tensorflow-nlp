@@ -1071,3 +1071,7 @@
 			* [RNN + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
 			
 				-> Recall: 79.6% &nbsp; Precision: 78.7% &nbsp; Exact Match: 42.6%
+
+			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_finetune.ipynb)
+			
+				-> Recall: 93.6% &nbsp; Precision: 83.1% &nbsp; Exact Match: 71.6%
