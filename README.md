@@ -23,7 +23,7 @@
 
 			5. we show pretrained model (bert) is able to improve the accuracy to 94%
 
-			6. we show pretrained model (alberta) is able to improve the accuracy to 94.7%
+			6. we show pretrained model (roberta) is able to improve the accuracy to 94.7%
 
 			7. we use back-translation, label smoothing, cyclical lr as training helpers
 			```
@@ -35,17 +35,17 @@
 			```
 			Abstract:
 
-			1. we show DAM (lots of interact) is able to reach 85.3% accuracy
+			1. we show dam (lots of interact) is able to reach 85.3% accuracy
 
-			2. we show Pyramid (RNN + image processing) is able to improve the accuracy to 87.1%
+			2. we show pyramid (rnn + image processing) is able to improve the accuracy to 87.1%
 
-			3. we show ESIM (RNN + lots of interact) is able to improve the accuracy to 87.4%
+			3. we show esim (rnn + lots of interact) is able to improve the accuracy to 87.4%
 
-			4. we show RE2 (RNN + lots of interact + residual) is able to improve the accuracy to 88.3%
+			4. we show re2 (rnn + lots of interact + residual) is able to improve the accuracy to 88.3%
 
-			5. we show BERT (pretrained model) is able to improve the accuracy to 90.4%
+			5. we show bert (pretrained model) is able to improve the accuracy to 90.4%
 
-			6. we show RoBERTa (pretrained model) is able to improve the accuracy to 91.1%
+			6. we show roberta (pretrained model) is able to improve the accuracy to 91.1%
 
 			7. we use label smoothing and cyclical lr as training helpers
 			```
@@ -55,11 +55,11 @@
 			```
 			Abstract:
 
-			1. we show ESIM, Pyramid, RE2 are able to reach 82.5% ~ 82.9% accuracy (very close)
+			1. we show esim, pyramid, re2 are able to reach 82.5% ~ 82.9% accuracy (very close)
 
-			2. we show RE2 is able to be improved to 83.8% by using cyclical lr and label smoothing
+			2. we show re2 is able to be improved to 83.8% by using cyclical lr and label smoothing
 
-			3. we show BERT (pretrained model) is able to further improve the accuracy to 84.75%
+			3. we show bert (pretrained model) is able to further improve the accuracy to 84.75%
 
 			Thinking:
 
@@ -67,7 +67,7 @@
 
 			because word segmentation can bring segmentation errors (but less sequential path)
 
-			BERT implicitly considers the word boundary information in its pretraining process
+			bert implicitly considers the word boundary information in its pretraining process
 			```
 
 	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
@@ -91,11 +91,15 @@
 
 			   e.g. (https://github.com/liu-nlper/dialogue-utterance-rewriter) 57.5% exact match
 
-			2. we show how to deploy model in Java environment
+			2. we show how to deploy model in java production
 
-			3. we show this task can be decomposed into two tasks (sequence tagging & generation)
+			3. we explain this task can be decomposed into two stages (retrieve entities & recombine query)
 
-			   and we show the performance of sequence tagging stage: 79.6% recall and 78.7% precision
+			   the first stage is fast (tagging) and the second stage is slow (autoregressive generation)
+
+			   for the first stage, we show bi-gru retrieves entities at 79.6% recall and 42.6% exact match
+
+			   then we show bert improves this retrieving task to 93.6% recall and 71.6 exact match
 			```
 
 	* [Semantic Parsing（语义解析）](https://github.com/zhedongzheng/finch#semantic-parsing)
@@ -1050,23 +1054,23 @@
 
 	* Despite End-to-End, this problem can also be decomposed into two stages
 
-		* **Stage 1 (Fast). Detecting the (missing or referred) keywords from the context**
+		* **Stage 1 (Fast). Detecting the (missing or referred) entities from the context**
 		
 			which is a sequence tagging task with sequential complexity ```O(1)```
 
-		* Stage 2 (Slow). Recombine the keywords with the query based on language fluency
+		* Stage 2 (Slow). Recombine the entities with the query based on language fluency
 			
 			which is a sequence generation task with sequential complexity ```O(N)```
 
 			```
 			For example, for a given query: "买不起" and the context: "成都房价是多少 不买就后悔了成都房价还有上涨空间"
 
-			First retrieve the keyword "成都房" from the context
+			First retrieve the entity "成都房" from the context
 
-			Then recombine the keyword "成都房" with the query "买不起" which becomes "买不起成都房"
+			Then recombine the entity "成都房" with the query "买不起" which becomes "买不起成都房"
 			```
 		
-		* For Stage 1 (sequence tagging for retrieving the keywords), the experiment results are:
+		* For Stage 1 (sequence tagging for retrieving the entities), the experiment results are:
 
 			* [\<Notebook> Bi-GRU + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
 			
