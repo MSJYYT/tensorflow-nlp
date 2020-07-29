@@ -1050,7 +1050,7 @@
 
 	* Despite End-to-End, this problem can also be decomposed into two stages
 
-		* Stage 1. Detecting the (missing or referred) keywords from the context
+		* **Stage 1. Detecting the (missing or referred) keywords from the context**
 		
 			which is a sequence tagging task with sequential complexity ```O(1)```
 
@@ -1061,12 +1061,12 @@
 			```
 			For example, for a given query: "买不起" and the context: "成都房价是多少 不买就后悔了成都房价还有上涨空间"
 
-			First retrieve the keyword "成都房" from the context (dialog history)
+			First retrieve the keyword "成都房" from the context
 
 			Then recombine the keyword "成都房" with the query "买不起" which becomes "买不起成都房"
 			```
 		
-		* For stage 1 (sequence tagging for retrieving the keywords), the experiment results are:
+		* For Stage 1 (sequence tagging for retrieving the keywords), the experiment results are:
 
 			* [RNN + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
 			
