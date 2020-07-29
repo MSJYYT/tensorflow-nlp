@@ -1066,6 +1066,8 @@
 			Then recombine the keyword "成都房" with the query "买不起" which becomes "买不起成都房"
 			```
 		
-		* I have conducted an [experiment](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb) on the stage 1 (sequence tagging), and the result is:
+		* For stage 1 (sequence tagging for retrieving the keywords), the experiment results are:
 
-			Recall: 79.6% &nbsp; Precision: 78.7% &nbsp; for retrieving the keywords
+			* [RNN + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
+			
+				-> Recall: 79.6% &nbsp; Precision: 78.7% &nbsp; Exact Match: 42.6%
