@@ -1050,11 +1050,11 @@
 
 	* Despite End-to-End, this problem can also be decomposed into two stages
 
-		* **Stage 1. Detecting the (missing or referred) keywords from the context**
+		* **Stage 1 (Fast). Detecting the (missing or referred) keywords from the context**
 		
 			which is a sequence tagging task with sequential complexity ```O(1)```
 
-		* Stage 2. Recombine the keywords with the query based on language fluency
+		* Stage 2 (Slow). Recombine the keywords with the query based on language fluency
 			
 			which is a sequence generation task with sequential complexity ```O(N)```
 
