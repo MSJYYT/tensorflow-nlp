@@ -1068,7 +1068,7 @@
 		
 		* For Stage 1 (sequence tagging for retrieving the keywords), the experiment results are:
 
-			* [RNN + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
+			* [\<Notebook> Bi-GRU + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
 			
 				-> Recall: 79.6% &nbsp; Precision: 78.7% &nbsp; Exact Match: 42.6%
 
