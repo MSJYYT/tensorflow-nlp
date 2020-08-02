@@ -705,6 +705,10 @@
 			  (https://aclweb.org/anthology/D18-1300)
 			  ```
 
+			* [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/semantic_parsing/tree_slu/main/gru_pointer_tf_addons_clr_bert_char.ipynb) Char Embedding + Bert Embedding + GRU + Pointer-Generator + Cyclical LR + Label Smoothing ->
+			
+			  81.1% Exact Match on Testing Data
+
 ---
 
 ## Knowledge Graph Inference
