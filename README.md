@@ -1116,6 +1116,6 @@
 
 		* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
 			
-			-> Intent Accuracy: 
+			-> Intent Accuracy: 97.6%
 
-			-> Slot Recall: % &nbsp; Slot Precision: % &nbsp; Slot Exact Match: %
+			-> Slot Recall: 85.8% &nbsp; Slot Precision: 88.2% &nbsp; Slot Exact Match: 61.6%
