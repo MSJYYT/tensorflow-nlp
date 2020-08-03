@@ -1084,7 +1084,7 @@
 			
 				-> Recall: 93.6% &nbsp; Precision: 83.1% &nbsp; Exact Match: 71.6%
 
-	* However, there is a practical problem to prefine whether the query needs to be rewritten or not
+	* However, there is still a practical problem to prefine whether the query needs to be rewritten or not
 
 		* if not, we just simply skip the rewriter and pass the query to the next stage
 
@@ -1113,6 +1113,10 @@
 			* intent: three situations {0, 1, 2} whether the query needs to be rewritten or not
 
 			* sequence labels: extract the missing or referred entities in the context
+
+		* [\<Text File>: Positive Data Example](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese/data/test_pos_tag.txt)
+		
+		* [\<Text File>: Negative Data Example](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese/data/test_neg_tag.txt)
 
 		* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
 			
