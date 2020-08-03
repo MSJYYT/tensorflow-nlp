@@ -1093,29 +1093,29 @@
 			* 0: the query does not need to be rewritten because it is irrelevant to the context
 
 				```
-				你喜欢五月天吗	超级喜欢阿信 中午出去吃饭吗
+				你喜欢五月天吗	超级喜欢阿信	中午出去吃饭吗
 				```
 
 			* 1: the query needs to be rewritten
 
 				```
-				你喜欢五月天吗	超级喜欢阿信 你喜欢他的那首歌
+				你喜欢五月天吗	超级喜欢阿信	你喜欢他的那首歌 -> 你喜欢阿信的那首歌
 				```
 
 			* 2: the query does not need to be rewritten because it already contains enough information
 
 				```
-				你喜欢五月天吗	超级喜欢阿信 你喜欢阿信的那首歌
+				你喜欢五月天吗	超级喜欢阿信	你喜欢阿信的那首歌
 				```
 
 		* therefore, we aim for training the model to jointly predict:
 
-			* intent (three situations {0, 1, 2} whether the query needs to be rewritten or not)
+			* intent: three situations {0, 1, 2} whether the query needs to be rewritten or not
 
-			* sequence labels for the missing or referred entites from the context
+			* sequence labels: extract the missing or referred entities in the context
 
-			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
+		* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
 			
-				-> Intent Accuracy: 
+			-> Intent Accuracy: 
 
-				-> Slot Recall: % &nbsp; Slot Precision: % &nbsp; Slot Exact Match: %
+			-> Slot Recall: % &nbsp; Slot Precision: % &nbsp; Slot Exact Match: %
