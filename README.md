@@ -1112,7 +1112,7 @@
 
 			* intent: three situations {0, 1, 2} whether the query needs to be rewritten or not
 
-			* sequence labels: extract the missing or referred entities in the context
+			* keyword extraction: extract the missing or referred entities in the context
 
 		* [\<Text File>: Positive Data Example](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/data/test_pos_tag.txt)
 		
@@ -1120,6 +1120,6 @@
 
 		* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
 			
-			-> Intent Accuracy: 97.6%
+			-> Intent: 97.6% accuracy
 
-			-> Slot Recall: 85.8% &nbsp; Slot Precision: 88.2% &nbsp; Slot Exact Match: 61.6%
+			-> Keyword extraction: 85.8% recall &nbsp; 88.2% precision &nbsp; 61.6% exact match
