@@ -93,13 +93,21 @@
 
 			2. we show how to deploy model in java production
 
-			3. we explain this task can be decomposed into two stages (retrieve entities & recombine query)
+			3. we explain this task can be decomposed into two stages (retrieve keywords & recombine query)
 
 			   the first stage is fast (tagging) and the second stage is slow (autoregressive generation)
 
 			   for the first stage, we show bi-gru retrieves entities at 79.6% recall and 42.6% exact match
 
 			   then we show bert is able to improve this retrieving task to 93.6% recall and 71.6% exact match
+			
+			4. we find that we need to predict the intent as well (whether to rewrite the query or not)
+
+			   in other words, whether to trigger the rewriter or not at the first place
+
+			   we have finetuned a bert to jointly predict intent and retrieve the keywords
+			   
+			   the result is: 97.7% intent accuracy; 90.6% recall and 62.6% exact match for keyword extraction
 			```
 
 	* [Semantic Parsing（语义解析）](https://github.com/zhedongzheng/finch#semantic-parsing)
@@ -1058,23 +1066,23 @@
 
 	* Despite End-to-End, this problem can also be decomposed into two stages
 
-		* **Stage 1 (Fast). Detecting the (missing or referred) entities from the context**
+		* **Stage 1 (Fast). Detecting the (missing or referred) keywords from the context**
 		
 			which is a sequence tagging task with sequential complexity ```O(1)```
 
-		* Stage 2 (Slow). Recombine the entities with the query based on language fluency
+		* Stage 2 (Slow). Recombine the keywords with the query based on language fluency
 			
 			which is a sequence generation task with sequential complexity ```O(N)```
 
 			```
 			For example, for a given query: "买不起" and the context: "成都房价是多少 不买就后悔了成都房价还有上涨空间"
 
-			First retrieve the entity "成都房" from the context
+			First retrieve the keyword "成都房" from the context which is very important
 
-			Then recombine the entity "成都房" with the query "买不起" which becomes "买不起成都房"
+			Then recombine the keyword "成都房" with the query "买不起" which becomes "买不起成都房"
 			```
 		
-		* For Stage 1 (sequence tagging for retrieving the entities), the experiment results are:
+		* For Stage 1 (sequence tagging for retrieving the keywords), the experiment results are:
 
 			* [\<Notebook> Bi-GRU + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/multi_turn_rewrite/chinese_tagging/main/tagging_only_pos.ipynb)
 			
@@ -1112,7 +1120,7 @@
 
 			* intent: three situations {0, 1, 2} whether the query needs to be rewritten or not
 
-			* keyword extraction: extract the missing or referred entities in the context
+			* keyword extraction: extract the missing or referred keywords in the context
 
 		* [\<Text File>: Positive Data Example](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/data/test_pos_tag.txt)
 		
@@ -1120,6 +1128,6 @@
 
 		* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
 			
-			-> Intent: 97.6% accuracy
+			-> Intent: 97.7% accuracy
 
-			-> Keyword extraction: 85.8% recall &nbsp; 88.2% precision &nbsp; 61.6% exact match
+			-> Keyword Extraction: 90.6% recall &nbsp; 78.4% precision &nbsp; 62.6% exact match
