@@ -117,9 +117,11 @@
 			```
 			Highlight:
 			
-			our implementation of pointer-generator reaches 80% exact match
+			our implementation of pointer-generator reaches 80.3% exact match on testing set
 
-			which is higher than all the results of the original paper including rnng
+			which is higher than all the results of the original paper including rnng (78.5%)
+
+			we further improve exact match to 81.1% by adding more embeddings (char & contextual)
 
 			(https://aclweb.org/anthology/D18-1300)
 			```
