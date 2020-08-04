@@ -107,7 +107,7 @@
 
 			   we have finetuned a bert to jointly predict intent and retrieve the keywords
 			   
-			   the result is: 97.7% intent accuracy; 90.6% recall and 62.6% exact match for keyword extraction
+			   the result is: 97.9% intent accuracy; 90.2% recall and 64.3% exact match for keyword extraction
 			```
 
 	* [Semantic Parsing（语义解析）](https://github.com/zhedongzheng/finch#semantic-parsing)
@@ -1130,6 +1130,6 @@
 
 		* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/multi_turn_rewrite/chinese_tagging/main/bert_joint_finetune.ipynb)
 			
-			-> Intent: 97.7% accuracy
+			-> Intent: 97.9% accuracy
 
-			-> Keyword Extraction: 90.6% recall &nbsp; 78.4% precision &nbsp; 62.6% exact match
+			-> Keyword Extraction: 90.2% recall &nbsp; 80.7% precision &nbsp; 64.3% exact match
