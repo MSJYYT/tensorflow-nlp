@@ -93,19 +93,19 @@
 
 			2. we show how to deploy model in java production
 
-			3. we explain this task can be decomposed into two stages (retrieve keywords & recombine query)
+			3. we explain this task can be decomposed into two stages (extract keywords & recombine query)
 
 			   the first stage is fast (tagging) and the second stage is slow (autoregressive generation)
 
-			   for the first stage, we show bi-gru retrieves entities at 79.6% recall and 42.6% exact match
+			   for the first stage, we show birnn extracts keywords at 79.6% recall and 42.6% exact match
 
-			   then we show bert is able to improve this retrieving task to 93.6% recall and 71.6% exact match
+			   then we show bert is able to improve this extraction task to 93.6% recall and 71.6% exact match
 			
 			4. we find that we need to predict the intent as well (whether to rewrite the query or not)
 
 			   in other words, whether to trigger the rewriter or not at the first place
 
-			   we have finetuned a bert to jointly predict intent and retrieve the keywords
+			   we have finetuned a bert to jointly predict intent and extract the keywords
 			   
 			   the result is: 97.9% intent accuracy; 90.2% recall and 64.3% exact match for keyword extraction
 			```
