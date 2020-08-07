@@ -455,12 +455,6 @@
 
 				The result of RE2 actually catches up with Bert base below (both 83.8%)
 
-				All these models have been implemented on character levels
-
-				We have attempted word-level by using [jieba](https://github.com/fxsjy/jieba) to split words
-
-				but [word-level RE2](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) (82.5% accuracy) does not surpass char-level RE2 (83.8%)
-
 			These results are higher than [the repo here](https://github.com/terrifyzhao/text_matching) and [the repo here](https://github.com/liuhuanyong/SiameseSentenceSimilarity)
 
 		* TensorFlow 2 + [transformers](https://github.com/huggingface/transformers)
@@ -476,6 +470,14 @@
 			 	-> 84.75% Testing Accuracy
 			
 				Weights downloaded from [here](https://github.com/ymcui/Chinese-BERT-wwm)
+
+	* About Word Segmentation
+
+		All these models have been implemented on character levels
+
+		We have attempted word-level by using [jieba](https://github.com/fxsjy/jieba) to split words
+
+		but [word-level RE2](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) (82.5% accuracy) does not surpass char-level RE2 (83.8%)
 
 ---
 
