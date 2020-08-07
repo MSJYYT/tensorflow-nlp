@@ -61,13 +61,7 @@
 
 			3. we show bert (pretrained model) is able to further improve the accuracy to 84.75%
 
-			Thinking:
-
-			   we process text on char level and have not considered the word boundary information
-
-			because word segmentation can bring segmentation errors (but less sequential path)
-
-			bert implicitly considers the word boundary information in its pretraining process
+			4. we show char-level re2 actually performs better than word-level re2 on this dataset
 			```
 
 	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
