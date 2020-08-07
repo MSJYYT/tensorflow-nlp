@@ -471,9 +471,9 @@
 			
 				Weights downloaded from [here](https://github.com/ymcui/Chinese-BERT-wwm)
 
-	* About Word Segmentation
+	* About word-level vs character-level
 
-		* All these models above have been implemented on character levels
+		* All these models above have been implemented on character-level
 
 		* We have attempted word-level modelling by using [jieba](https://github.com/fxsjy/jieba) to split words
 
