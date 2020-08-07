@@ -473,11 +473,11 @@
 
 	* About Word Segmentation
 
-		All these models have been implemented on character levels
+		* All these models above have been implemented on character levels
 
-		We have attempted word-level by using [jieba](https://github.com/fxsjy/jieba) to split words
+		* We have attempted word-level modelling by using [jieba](https://github.com/fxsjy/jieba) to split words
 
-		but [word-level RE2](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) (82.5% accuracy) does not surpass char-level RE2 (83.8%)
+		* but [word-level RE2](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) (82.5% accuracy) does not surpass char-level RE2 above (83.8%)
 
 ---
 
