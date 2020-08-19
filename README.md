@@ -589,7 +589,7 @@
 			
 			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/lstm_seq2seq_train.ipynb)
 			
-				LSTM + Attention + Beam Search -> 39.331 Testing Perplexity
+				LSTM Encoder + LSTM Decoder -> 39.331 Testing Perplexity
 
 		* Model Inference
 		
@@ -603,7 +603,7 @@
 			
 			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_train.ipynb)
 			
-				6-Layer Transformer Encoder + LSTM Decoder -> 40.127 Testing Perplexity
+				Transformer Encoder + LSTM Decoder -> 40.127 Testing Perplexity
 
 		* Model Inference
 		
