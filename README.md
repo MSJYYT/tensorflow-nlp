@@ -573,9 +573,9 @@
 		└── transformer_infer.ipynb     # step 4. model inference
 ```
 
-* Task: [Chinese Conversation Dataset](https://github.com/thu-coai/CDial-GPT)
+* Task: [Large-scale Chinese Conversation Dataset](https://github.com/thu-coai/CDial-GPT)
 
-        Training Data: 2000000, Testing Data: 19008
+        Training Data: 5000000, Testing Data: 19008
 	
 	* Data
 		
@@ -583,13 +583,15 @@
 
 		* [\<Notebook>: Make Data & Vocabulary](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/free_chat/chinese_lccc/data/make_data.ipynb)
 
+			* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/free_chat/chinese_lccc/vocab/char.txt)
+
 	* Model: [RNN Seq2Seq + Attention](https://arxiv.org/abs/1409.0473)
 
 		* TensorFlow 1
 			
 			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/lstm_seq2seq_train.ipynb)
 			
-				LSTM Encoder + LSTM Decoder -> 39.331 Testing Perplexity
+				LSTM Encoder + LSTM Decoder -> 41.250 Testing Perplexity
 
 		* Model Inference
 		
@@ -603,7 +605,7 @@
 			
 			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_train.ipynb)
 			
-				Transformer Encoder + LSTM Decoder -> 40.127 Testing Perplexity
+				Transformer Encoder + LSTM Decoder -> 42.465 Testing Perplexity
 
 		* Model Inference
 		
