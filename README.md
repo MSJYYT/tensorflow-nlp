@@ -585,6 +585,20 @@
 
 			* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/free_chat/chinese_lccc/vocab/char.txt)
 
+	* Model: [Transformer](https://arxiv.org/abs/1706.03762)
+
+		* TensorFlow 1 + [texar](https://github.com/asyml/texar)
+			
+			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_train.ipynb)
+			
+				Transformer Encoder + LSTM Decoder -> 42.465 Testing Perplexity
+
+		* Model Inference
+		
+			* [\<Notebook> Model Export](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_export.ipynb)
+			
+			* [\<Notebook> Python Inference](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_infer.ipynb)
+
 	* Model: [RNN Seq2Seq + Attention](https://arxiv.org/abs/1409.0473)
 
 		* TensorFlow 1
@@ -599,19 +613,19 @@
 			
 			* [\<Notebook> Python Inference](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/lstm_seq2seq_infer.ipynb)
 
-	* Model: [Transformer](https://arxiv.org/abs/1706.03762)
+	* Model: [RNN Seq2Seq + Attention + Pointer-Generator](https://arxiv.org/abs/1704.04368)
 
-		* TensorFlow 1 + [texar](https://github.com/asyml/texar)
+		* TensorFlow 1
 			
-			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_train.ipynb)
+			* [\<Notebook> Training](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/lstm_pointer_train.ipynb)
 			
-				Transformer Encoder + LSTM Decoder -> 42.465 Testing Perplexity
+				LSTM Encoder + LSTM Decoder + Pointer-Generator -> 36.525 Testing Perplexity
 
 		* Model Inference
 		
-			* [\<Notebook> Model Export](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_export.ipynb)
+			* [\<Notebook> Model Export](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/lstm_pointer_export.ipynb)
 			
-			* [\<Notebook> Python Inference](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/transformer_infer.ipynb)
+			* [\<Notebook> Python Inference](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/lstm_pointer_infer.ipynb)
 
 	* If you want to deploy model in Java production
 
