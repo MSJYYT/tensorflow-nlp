@@ -575,7 +575,7 @@
 
 * Task: [Large-scale Chinese Conversation Dataset](https://github.com/thu-coai/CDial-GPT)
 
-        Training Data: 5000000, Testing Data: 19008
+        Training Data: 5000000 (sampled due to small memory), Testing Data: 19008
 	
 	* Data
 		
