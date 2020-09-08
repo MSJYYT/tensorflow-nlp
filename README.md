@@ -670,6 +670,16 @@
 			Method name is: tensorflow/serving/predict
 			```
 
+	* Model: [GPT](https://www.semanticscholar.org/paper/Language-Models-are-Unsupervised-Multitask-Learners-Radford-Wu/9405cc0d6169988371b2755e573cc28650d14dfe)
+
+		* TensorFlow 1 + [bert4keras](https://github.com/bojone/bert4keras)
+			
+			* [\<Notebook> GPT_LCCC-base](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/gpt_lccc_base.ipynb)
+			
+			* [\<Notebook> GPT_LCCC-large](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/gpt_lccc_large.ipynb)
+
+			* [\<Notebook> NEZHA LM](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/nezha_gpt.ipynb)
+
 ---
 
 ## Semantic Parsing
