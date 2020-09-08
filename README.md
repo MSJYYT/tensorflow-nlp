@@ -680,11 +680,11 @@
 
 			* [\<Notebook> NEZHA LM](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/nezha_gpt.ipynb)
 
-		| 问题/模型回复 | Our RNN | GPT base | GPT large | NEZHA |
+		| 问题 / 模型回复 | Our RNN | GPT base | GPT large | NEZHA |
 		| --- | --- | --- | --- | --- |
 		| Q: 你好 | A: 你好 | A: 你好 | A: 你好，你好，我是大好人。 | A: 您好 |
 		| Q: 早上好 | A: 早上好 | A: 早上好，好久不见 | A: 早上好！ | A: 早啊早啊 |
-		| Q: 晚上好 | A: 晚上好 | A: 你好 | A: 好久不见 | A:晚上好！ |
+		| Q: 晚上好 | A: 晚上好 | A: 你好 | A: 好久不见 | A: 晚上好！ |
 		| Q: 再见 | A: 再见 | A: 不见 | A: 你是不是不爱我了 | A: 我要走了 |
 
 ---
