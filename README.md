@@ -680,6 +680,12 @@
 
 			* [\<Notebook> NEZHA LM](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/nezha_gpt.ipynb)
 
+		| 问题/模型 | Our RNN | GPT-base | GPT-large | NEZHA |
+		| 你好 | - | - | - | - |
+		| 早上好 | - | - | - | - |
+		| 晚上好 | - | - | - | - |
+		| 再见 | - | - | - | - |
+
 ---
 
 ## Semantic Parsing
