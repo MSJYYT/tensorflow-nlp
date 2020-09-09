@@ -517,6 +517,18 @@
 			
 			  92% Slot Micro-F1 on Testing Data
 
+	* Model: [Transformer](https://arxiv.org/abs/1706.03762)
+
+		* TensorFlow 2
+
+			* [\<Notebook> 2-layer Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) 
+			
+			  % Intent Acc, 95.% Slot Micro-F1 on Testing Data
+
+			* [\<Notebook> 2-layer Transformer + Time-weighting](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_weight.ipynb) 
+			
+			  97.2% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
+
 	* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
 
 		* TensorFlow 2
