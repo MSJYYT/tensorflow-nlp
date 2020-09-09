@@ -509,7 +509,7 @@
 	
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/vocab/word.txt)
 
-	* Model: Conditional Random Fields
+	* Model: [Conditional Random Fields](https://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf)
 	
 		* [CRFsuite](http://www.chokkan.org/software/crfsuite/) + [pycrfsuite](https://github.com/scrapinghub/python-crfsuite)
 
