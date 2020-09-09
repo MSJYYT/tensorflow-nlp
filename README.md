@@ -523,7 +523,7 @@
 
 			* [\<Notebook> 2-layer Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) 
 			
-			  % Intent Acc, 95.% Slot Micro-F1 on Testing Data
+			  96.5% Intent Acc, 95.5% Slot Micro-F1 on Testing Data
 
 			* [\<Notebook> 2-layer Transformer + Time-weighting](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_weight.ipynb) 
 			
