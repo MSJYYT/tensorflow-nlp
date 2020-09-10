@@ -529,6 +529,10 @@
 			
 			  97.2% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
 
+			* [\<Notebook> 2-layer Transformer + Time-mixing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_mixing.ipynb) 
+			
+			  97.3% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
+
 	* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
 
 		* TensorFlow 2
