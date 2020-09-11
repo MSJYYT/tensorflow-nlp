@@ -517,22 +517,6 @@
 			
 			  92% Slot Micro-F1 on Testing Data
 
-	* Model: [Transformer](https://arxiv.org/abs/1706.03762)
-
-		* TensorFlow 2
-
-			* [\<Notebook> 2-layer Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) 
-			
-			  96.5% Intent Acc, 95.5% Slot Micro-F1 on Testing Data
-
-			* [\<Notebook> 2-layer Transformer + Time-weighting](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_weight.ipynb) 
-			
-			  97.2% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
-
-			* [\<Notebook> 2-layer Transformer + Time-mixing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_mixing.ipynb) 
-			
-			  97.3% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
-
 	* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
 
 		* TensorFlow 2
@@ -548,6 +532,22 @@
 			* [\<Notebook> Bi-GRU + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr_crf.ipynb) 
 			
 			  97.2% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
+
+	* Model: [Transformer](https://arxiv.org/abs/1706.03762)
+
+		* TensorFlow 2
+
+			* [\<Notebook> 2-layer Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) 
+			
+			  96.5% Intent Acc, 95.5% Slot Micro-F1 on Testing Data
+
+			* [\<Notebook> 2-layer Transformer + Time-weighting](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_weight.ipynb) 
+			
+			  97.2% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
+
+			* [\<Notebook> 2-layer Transformer + Time-mixing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_mixing.ipynb) 
+			
+			  97.5% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
 
 	* Model: [ELMO Embedding](https://arxiv.org/abs/1802.05365)
 	
