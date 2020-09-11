@@ -11,11 +11,11 @@
 			```
 			Abstract:
 			
-			1. we show the classic ML model (tfidf + logistic regression) is able to reach 89.6%
+			1. we show the classic ml model (tfidf + logistic regression) is able to reach 89.6%
 
 			   which is decent for its simplicity, efficiency and low-cost
 
-			2. we show FastText model is able to reach 90% accuracy
+			2. we show fasttext model is able to reach 90% accuracy
 
 			3. we show cnn-based model is able to improve the accuracy to 91.7%
 
@@ -67,6 +67,20 @@
 	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
 
 		* ATIS（English Data）
+
+			```
+			Abstract:
+
+			1. we show the baseline crf is able to reach 92% accuracy
+
+			2. we show birnn can reach 95.8% micro-f1 for slots and 97.2% accuracy for intents
+
+			3. we show native transformer can reach 95.5% micro-f1 for slots and 96.5% accuracy for intents
+
+			   after applying time-mixing, it can reach 95.8% micro-f1 for slots and 97.5% accuracy for intents
+
+			4. we show elmo embedding is effective and can reach 96.3% micro-f1 for slots and 97.3% accuracy for intents
+			```
 
 	* [Generative Dialog（生成式对话）](https://github.com/zhedongzheng/finch#generative-dialog)
 
