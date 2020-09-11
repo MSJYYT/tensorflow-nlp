@@ -548,6 +548,8 @@
 			* [\<Notebook> 2-layer Transformer + Time-mixing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_mixing.ipynb) 
 			
 			  97.5% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
+			  
+		Time-weighting and Time-mixing strategies are borrowed from [this repo](https://github.com/BlinkDL/minGPT-tuned), which are proved to be effective here
 
 	* Model: [ELMO Embedding](https://arxiv.org/abs/1802.05365)
 	
