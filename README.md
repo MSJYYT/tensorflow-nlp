@@ -708,9 +708,17 @@
 			
 			* [\<Notebook> GPT LCCC base](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/gpt_lccc_base.ipynb)
 			
+			  This model is pre-trained and released from [Tsinghua University](https://github.com/thu-coai/CDial-GPT)
+			
 			* [\<Notebook> GPT LCCC large](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/gpt_lccc_large.ipynb)
+			
+			  This model is pre-trained and released from [Tsinghua University](https://github.com/thu-coai/CDial-GPT)
 
 			* [\<Notebook> NEZHA LM](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/free_chat/chinese_lccc/main/nezha_gpt.ipynb)
+			
+			  This model is pre-trained and released from [Jianlin Su](https://github.com/bojone/nezha_gpt_dialog)
+
+	* Response Comparsion
 
 		| 问题 / 模型回复 | Our RNN | GPT base | GPT large | Nezha |
 		| --- | --- | --- | --- | --- |
