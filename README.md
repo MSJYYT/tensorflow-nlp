@@ -144,7 +144,7 @@
 			(https://aclweb.org/anthology/D18-1300)
 			```
 	
-	* [Question Answering（问题回答）](https://github.com/zhedongzheng/finch#question-answering)
+	* [Multi-hop Question Answering（多跳问题回答）](https://github.com/zhedongzheng/finch#multi-hop-question-answering)
 	
 		* bAbI（Engish Data）
 		
@@ -946,7 +946,7 @@
 
 ---
 
-## Question Answering
+## Multi-hop Question Answering
 
 <img src="https://github.com/DSKSD/DeepNLP-models-Pytorch/blob/master/images/10.dmn-architecture.png" width='500'>
 
