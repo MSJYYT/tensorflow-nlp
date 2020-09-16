@@ -805,7 +805,7 @@
 
 			As can be seen here, sparse retrieval is easy to be attacked by character-level difference
 
-			However, Dense retrieval is more robust to capture the sentence meaning
+			However, Dense retrieval is more robust to capture the contextual meaning
 
 ---
 
