@@ -796,6 +796,17 @@
 
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
+		* Badcase Analysis
+
+			| 问题 / 模型回复 | Sparse Retrieval | Dense Retrieval |
+			| --- | --- | --- |
+			| Q: 我喜欢你 | A: 书是人类进步的阶梯 | A: 我也爱你 |
+			| Q: 热死了 | A: 我也想死你了 | A: 对啊, 热死人了 |
+
+			As can be seen here, sparse retrieval is easy to be attacked by character-level difference
+
+			However, Dense retrieval is more robust to capture the sentence meaning
+
 ---
 
 ## Semantic Parsing
