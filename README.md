@@ -96,6 +96,12 @@
 			3. we test some powerful GPT models and compare their responses with our LSTM model's
 			```
 
+	* [Retrieval Dialog（检索式对话）](https://github.com/zhedongzheng/finch#retrieval-dialog)
+
+		* Sparse Retrieval
+
+		* Dense Retrieval
+
 	* [Multi-turn Dialogue Rewriting（多轮对话改写）](https://github.com/zhedongzheng/finch#multi-turn-dialogue-rewriting)
 
 		* 20k 腾讯 AI 研发数据（Chinese Data）
@@ -777,6 +783,18 @@
 		| Q: 我想爸妈了 | A: 我也想爸妈 | A: 哈哈 | A: 我也想 | A: 想我吗 |
 		| Q: 不知道小孩在家有没有听话 | A: 我也不知道 | A: 没有 | A: 听话的话肯定是会听话的。 | A: 我也是听不懂啊 |
 		| Q: 想回家撸猫 | A: 我也想回家 | A: 你也想啊？ | A: 我们这也有一个 | A: 回呀回呀 |
+
+---
+
+## Retrieval Dialog
+
+* Task: Build a chatbot answering fundamental questions
+
+	* Engine: Elasticsearch
+
+		* [\<Notebook> Sparse (Default) Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve.ipynb)
+
+		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
 ---
 
