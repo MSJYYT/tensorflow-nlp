@@ -807,6 +807,8 @@
 
 			However, dense retrieval is more robust to capture the contextual information
 
+		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
+
 ---
 
 ## Semantic Parsing
