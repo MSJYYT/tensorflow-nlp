@@ -92,8 +92,10 @@
 			1. we show how to train a LSTM based Seq2Seq to generate natural human-like responses in chinese free chat
 
 			2. we show how to add Pointer Net to Seq2Seq, which becomes Pointer-Generator that can generate better responses
+			
+			3. we show how to deploy model in Java in order to be integrated into production system
 
-			3. we test some powerful GPT models and compare their responses with our LSTM model's
+			4. we test some powerful GPT models and compare their responses with our LSTM model's
 			```
 
 	* [Retrieval Dialog（检索式对话）](https://github.com/zhedongzheng/finch#retrieval-dialog)
