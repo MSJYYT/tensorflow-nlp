@@ -143,7 +143,7 @@
 			```
 			Highlight:
 			
-			our implementation of pointer-generator reaches 80.3% exact match on testing set
+			our implementation of pointer-generator reaches 80.4% exact match on testing set
 
 			which is higher than all the results of the original paper including rnng (78.5%)
 
@@ -862,7 +862,7 @@
 
 			* [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/semantic_parsing/tree_slu/main/gru_pointer_tf_addons_clr.ipynb) GRU + Pointer-Generator + Cyclical LR + Label Smoothing ->
 			
-			  80.3% Exact Match on Testing Data
+			  80.4% Exact Match on Testing Data
 			  
 			  ```
 			  Pointer Generator = Pointer Network + Seq2Seq Network
