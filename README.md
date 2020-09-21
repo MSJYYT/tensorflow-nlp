@@ -64,7 +64,7 @@
 			4. we show char-level re2 actually performs better than word-level re2 on this dataset
 			```
 
-	* [Spoken Language Understanding（对话理解）](https://github.com/zhedongzheng/finch#spoken-language-understanding)
+	* [Intent Detection and Slot Filling（意图检测与槽位填充）](https://github.com/zhedongzheng/finch#intent-detection-and-slot-filling)
 
 		* ATIS（English Data）
 
@@ -160,7 +160,7 @@
 
 * Knowledge Graph（知识图谱）
 
-	* [Knowledge Graph Inference（知识图谱推理）](https://github.com/zhedongzheng/finch#knowledge-graph-inference)
+	* [Knowledge Graph Completion（知识图谱补全）](https://github.com/zhedongzheng/finch#knowledge-graph-completion)
 	
 	* [Knowledge Base Question Answering（知识图谱问答）](https://github.com/zhedongzheng/finch#knowledge-base-question-answering)
 	
@@ -507,7 +507,7 @@
 
 ---
 
-## Spoken Language Understanding
+## Intent Detection and Slot Filling
 
 <img src="https://yuanxiaosc.github.io/2019/03/18/%E6%A7%BD%E5%A1%AB%E5%85%85%E5%92%8C%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB%E4%BB%BB%E5%8A%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/1.png" height="300">
 
@@ -880,7 +880,7 @@
 
 ---
 
-## Knowledge Graph Inference
+## Knowledge Graph Completion
 
 ```
 └── finch/tensorflow2/knowledge_graph_completion/wn18
