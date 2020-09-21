@@ -71,7 +71,7 @@
 			```
 			Abstract:
 
-			1. we show the baseline crf is able to reach 92% accuracy
+			1. we show the baseline crf is able to reach 92% accuracy for slots
 
 			2. we show birnn can reach 95.8% micro-f1 for slots and 97.2% accuracy for intents
 
