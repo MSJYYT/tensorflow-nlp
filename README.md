@@ -103,6 +103,8 @@
 		* Sparse Retrieval
 
 		* Dense Retrieval
+		
+		* Dense Retrieval (Cross-lingual)
 
 	* [Multi-turn Dialogue Rewriting（多轮对话改写）](https://github.com/zhedongzheng/finch#multi-turn-dialogue-rewriting)
 
