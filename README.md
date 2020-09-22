@@ -149,8 +149,6 @@
 
 			which is higher than all the results of the original paper including rnng (78.5%)
 
-			we further improve exact match to 81.1% by adding more embeddings (char & contextual)
-
 			(https://aclweb.org/anthology/D18-1300)
 			```
 	
@@ -875,10 +873,6 @@
 			  
 			  (https://aclweb.org/anthology/D18-1300)
 			  ```
-
-			* [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/semantic_parsing/tree_slu/main/gru_pointer_tf_addons_clr_bert_char.ipynb) Char Embedding + Bert Embedding + GRU + Pointer-Generator + Cyclical LR + Label Smoothing ->
-			
-			  81.1% Exact Match on Testing Data
 
 ---
 
