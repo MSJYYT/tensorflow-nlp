@@ -874,6 +874,10 @@
 			  (https://aclweb.org/anthology/D18-1300)
 			  ```
 
+			* [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/semantic_parsing/tree_slu/main/gru_pointer_tf_addons_clr_char.ipynb) GRU + Pointer-Generator + Cyclical LR + Label Smoothing + Char Embedding ->
+			
+			  80.7% Exact Match on Testing Data
+
 ---
 
 ## Knowledge Graph Completion
