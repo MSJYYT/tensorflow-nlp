@@ -975,7 +975,9 @@
         	宝马和奔驰比哪个更好?  /  which one is even better, the BMW or the Benz?
 	```
 	
-	* [refo](https://github.com/machinalis/refo) + [jieba](https://github.com/fxsjy/jieba): &nbsp; &nbsp; [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/rule_based_qa.ipynb)
+	* Tool: [refo](https://github.com/machinalis/refo) + [jieba](https://github.com/fxsjy/jieba)
+	
+	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/rule_based_qa.ipynb)
 
 ---
 
