@@ -809,7 +809,7 @@
 
 			However, dense retrieval is more robust to capture the contextual information
 
-		* [\<Notebook> Dense Retrieval (Bert)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert.ipynb)
+		* [\<Notebook> Dense Retrieval (Bert)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb)
 
 		* [\<Notebook> Dense Retrieval (Cross-lingual)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
 
