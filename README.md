@@ -961,7 +961,7 @@
 
 * Rule-based System（基于规则的系统）
 	
-	For example, we want to answer the following questions:
+	For example, we want to answer the following questions with some car knowledge:
 	
 	```
 		宝马是什么?  /  what is BMW?
@@ -978,6 +978,10 @@
 	* Tool: [refo](https://github.com/machinalis/refo) + [jieba](https://github.com/fxsjy/jieba)
 	
 	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/rule_based_qa.ipynb)
+
+	* Tool: [pyjsgf](https://github.com/Danesprite/pyjsgf)
+
+	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/jsgf_qa.ipynb)
 
 ---
 
