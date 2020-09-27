@@ -809,7 +809,17 @@
 
 			However, dense retrieval is more robust to capture the contextual information
 
-		* [\<Notebook> Dense Retrieval (Bert)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb)
+		* [\<Notebook> Dense Retrieval (Bert + Default Pooling)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb)
+
+		* [\<Notebook> Dense Retrieval (Bert + Mean Pooling)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub_mean.ipynb)
+
+		   Case Analysis
+
+			| 问题 / 模型回复 | Default Pooling | Mean Pooling |
+			| --- | --- | --- |
+			| Q: 热死了 | Q: 笑死我了 A: 瞧把你开心的 | Q: 好热 A: 对啊, 热死人了 |
+
+			As can be seen here, mean pooling retrieves correct qa pair while default bert pooling does not
 
 		* [\<Notebook> Dense Retrieval (Cross-lingual)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
 
