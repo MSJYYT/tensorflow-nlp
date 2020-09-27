@@ -798,7 +798,7 @@
 
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
-		* Case Analysis
+		   Case Analysis
 
 			| 问题 / 模型回复 | Sparse Retrieval | Dense Retrieval |
 			| --- | --- | --- |
@@ -808,6 +808,8 @@
 			As can be seen here, sparse retrieval is easy to be disrupted by similar characters
 
 			However, dense retrieval is more robust to capture the contextual information
+
+		* [\<Notebook> Dense Retrieval (Bert)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert.ipynb)
 
 		* [\<Notebook> Dense Retrieval (Cross-lingual)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
 
