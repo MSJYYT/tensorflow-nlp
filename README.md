@@ -15,17 +15,19 @@
 
 			   which is decent for its simplicity, efficiency and low-cost
 
-			2. we show fasttext model is able to reach 90% accuracy
+			2. we show tfidf + logistic regression can be improved to 90.1% by knowledge distillation
 
-			3. we show cnn-based model is able to improve the accuracy to 91.7%
+			3. we show fasttext model is able to reach 90% accuracy
 
-			4. we show rnn-based model is able to improve the accuracy to 92.6%
+			4. we show cnn-based model is able to improve the accuracy to 91.7%
 
-			5. we show pretrained model (bert) is able to improve the accuracy to 94%
+			5. we show rnn-based model is able to improve the accuracy to 92.6%
 
-			6. we show pretrained model (roberta) is able to improve the accuracy to 94.7%
+			6. we show pretrained model (bert) is able to improve the accuracy to 94%
 
-			7. we use back-translation, label smoothing, cyclical lr as training helpers
+			7. we show pretrained model (roberta) is able to improve the accuracy to 94.7%
+
+			8. we use back-translation, label smoothing, cyclical lr as training helpers
 			```
 
 	* [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch#text-matching)
@@ -231,6 +233,10 @@
 			* [\<Notebook> Unigram + Bigram + TF (binary) + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true_bigram.ipynb)
 			
 			 	-> 89.6% Testing Accuracy
+
+			* [\<Notebook> Unigram + Bigram + TF (binary) + IDF + Logistic Regression + Knowledge Distillation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/lr_know_dist.ipynb)
+			
+			 	-> 90.1% Testing Accuracy
 
 	* Model: [FastText](https://arxiv.org/abs/1607.01759)
 	
