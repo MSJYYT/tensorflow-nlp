@@ -246,11 +246,11 @@
 		
 		 		-> 87.3% Testing Accuracy
 		
-			* [\<Notebook> (Unigram + Bigram) FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb)
+			* [\<Notebook> Bigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb)
 
 				-> 89.8% Testing Accuracy
 
-			* [\<Notebook> Auto-tune FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb)
+			* [\<Notebook> Autotune FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb)
 
 				-> 90.1% Testing Accuracy
 
@@ -260,7 +260,7 @@
 				
 			 	-> 89.1 % Testing Accuracy
 				
-			* [\<Notebook> (Unigram + Bigram) FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/fasttext_bigram.ipynb)
+			* [\<Notebook> Bigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/fasttext_bigram.ipynb)
 	
 	 			-> 90.2 % Testing Accuracy
 	
