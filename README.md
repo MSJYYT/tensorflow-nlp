@@ -994,14 +994,10 @@
         	宝马和奔驰比哪个好?  /  which one is better, the BMW or the Benz?
         	宝马和奔驰比哪个更好?  /  which one is even better, the BMW or the Benz?
 	```
-	
-	* Tool: [refo](https://github.com/machinalis/refo) + [jieba](https://github.com/fxsjy/jieba)
-	
-	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/rule_based_qa.ipynb)
 
-	* Tool: [pyjsgf](https://github.com/Danesprite/pyjsgf)
+	* Tool: [RDFlib](https://github.com/RDFLib/rdflib) + Regular Expression
 
-	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/jsgf_qa.ipynb)
+	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/regex.ipynb)
 
 ---
 
