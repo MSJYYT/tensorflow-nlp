@@ -555,7 +555,7 @@
 
 			* [\<Notebook> CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) 
 			
-			  92% Slot Micro-F1 on Testing Data
+			  92.6% Slot Micro-F1 on Testing Data
 
 	* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
 
