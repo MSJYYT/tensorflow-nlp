@@ -1040,11 +1040,11 @@
 
 ## Text Processing Tools
 
-* Word Matching
+* Word Extraction
 
 	* Chinese
 
-		* [\<Notebook>: Regex Rule Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/regex/zhcn_extract.ipynb)
+		* [\<Notebook>: Regex Expression Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/regex/zhcn_extract.ipynb)
 
 * Word Segmentation
 
