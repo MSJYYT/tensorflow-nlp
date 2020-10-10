@@ -326,6 +326,8 @@
 		
 	* Model	
 	
+		These results can be compared to [this repo](https://github.com/terrifyzhao/text_matching) and [this repo](https://github.com/liuhuanyong/SiameseSentenceSimilarity) on the same dataset
+	
 		* TensorFlow 2
 	
 			* [\<Notebook> ESIM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/esim.ipynb)
@@ -344,8 +346,6 @@
 
  				-> 83.8% Testing Accuracy
 
-			These results are higher than [this repo](https://github.com/terrifyzhao/text_matching) and [this repo](https://github.com/liuhuanyong/SiameseSentenceSimilarity)
-
 			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/bert_finetune.ipynb)
 			
 			 	-> 83.8% Testing Accuracy
@@ -358,7 +358,7 @@
 
 	* About word-level vs character-level
 
-		* All above models have been implemented on character-level
+		* All above deep models have been implemented on character-level
 
 		* We have attempted word-level modelling by using [jieba](https://github.com/fxsjy/jieba) to split words
 
