@@ -400,7 +400,7 @@
 			
 				-> 91.1% Testing Accuracy
 
-<img src="https://pic2.zhimg.com/80/v2-3ae885000f570573020afa0c4ce65a19_720w.jpg" height="300">
+<img src="https://pic4.zhimg.com/80/v2-a1a86096068c31bbe3480fcb68b9cea7_720w.jpg" height="300">
 
 ```
 └── finch/tensorflow2/text_matching/chinese
