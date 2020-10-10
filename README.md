@@ -193,18 +193,14 @@
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/vocab/word.txt)
 
 	* Model: TF-IDF + Logistic Regression
-	
-		* PySpark
-		
-			* [\<Notebook> Unigram + TF + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/text_classification/imdb/tfidf_lr.ipynb)
-			
-			 	-> 88.2% Testing Accuracy
 			
 		* Sklearn
 		
 			* [\<Notebook> Unigram + TF + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_false.ipynb)
 			
 			 	-> 88.3% Testing Accuracy
+				
+				[PySpark](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/text_classification/imdb/tfidf_lr.ipynb) implementation here
 			
 			* [\<Notebook> Unigram + TF (binary) + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true.ipynb)
 			
@@ -912,14 +908,12 @@
 	* Data: [2373 Lines of Book Titles](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/spark/topic_modelling/book_titles/all_book_titles.txt)（English Data）
 
 		* Model: TF-IDF + LDA
-		
-			* PySpark
-			
-				* [\<Notebook> TF + IDF + LDA](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/topic_modelling/book_titles/lda.ipynb)
 
 			* Sklearn + pyLDAvis
 			
 				* [\<Notebook> TF + IDF + LDA](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/topic_modelling/book_titles/lda.ipynb)
+				
+					[PySpark](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/topic_modelling/book_titles/lda.ipynb) implementation here
 				
 				* [\<Notebook> Visualization](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/topic_modelling/book_titles/lda.html#topic=1&lambda=1&term=)
 
