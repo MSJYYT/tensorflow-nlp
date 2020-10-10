@@ -31,26 +31,6 @@
 			```
 
 	* [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch#text-matching)
-	
-		* SNLI（English Data）
-
-			```
-			Abstract:
-
-			1. we show dam (lots of interact) is able to reach 85.3% accuracy
-
-			2. we show pyramid (rnn + image processing) is able to improve the accuracy to 87.1%
-
-			3. we show esim (rnn + lots of interact) is able to improve the accuracy to 87.4%
-
-			4. we show re2 (rnn + lots of interact + residual) is able to improve the accuracy to 88.3%
-
-			5. we show bert (pretrained model) is able to improve the accuracy to 90.4%
-
-			6. we show roberta (pretrained model) is able to improve the accuracy to 91.1%
-
-			7. we use label smoothing and cyclical lr as training helpers
-			```
 
 		* 微众银行智能客服（Chinese Data）
 
@@ -317,89 +297,6 @@
 
 ## Text Matching
 
-```
-└── finch/tensorflow2/text_matching/snli
-	│
-	├── data
-	│   └── glove.840B.300d.txt       # pretrained embedding, download and put here
-	│   └── download_data.ipynb       # step 1. run this to download snli dataset
-	│   └── make_data.ipynb           # step 2. run this to generate train.txt, test.txt, word.txt 
-	│   └── train.txt  		  # incomplete sample, format <label, text1, text2> separated by \t 
-	│   └── test.txt   		  # incomplete sample, format <label, text1, text2> separated by \t
-	│
-	├── vocab
-	│   └── word.txt                  # incomplete sample, list of words in vocabulary
-	│	
-	└── main              
-		└── dam.ipynb      	  # step 3. train and evaluate model
-		└── esim.ipynb      	  # step 3. train and evaluate model
-		└── ......
-```
-
-* Task: [SNLI](https://nlp.stanford.edu/projects/snli/)（English Data）
-
-        Training Data: 550152, Testing Data: 10000, Labels: 3
-
-	* [\<Notebook>: Download Data](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/data/download_data.ipynb)
-	
-	* [\<Notebook>: Make Data & Vocabulary](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/data/make_data.ipynb)
-		
-		* [\<Text File>: Data Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/data/train.txt)
-		
-		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/vocab/word.txt)
-
-	* TensorFlow 2
-
-		* Model: [DAM](https://arxiv.org/abs/1606.01933)
-		
-			* [\<Notebook> DAM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/dam.ipynb)
-			
- 				-> 85.3% Testing Accuracy
-			
-			 	The accuracy of this implementation is higher than [UCL MR Group](http://isabelleaugenstein.github.io/papers/JTR_ACL_demo_paper.pdf)'s implementation (84.6%)
-
-		* Model: [Match Pyramid](https://arxiv.org/abs/1602.06359)
-			
-			* [\<Notebook> Pyramid](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/pyramid_multi_attn.ipynb)
-
- 				-> 87.1% Testing Accuracy
-
-	 		 	The accuracy of this model is 0.3% below ESIM, however the speed is 1x faster than ESIM
-
-		* Model: [ESIM](https://arxiv.org/abs/1609.06038)
-		
-			* [\<Notebook> ESIM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/esim.ipynb)
-
- 				-> 87.4% Testing Accuracy
-
-			 	The accuracy of this implementation is comparable to [UCL MR Group](http://isabelleaugenstein.github.io/papers/JTR_ACL_demo_paper.pdf)'s implementation (87.2%)
-
-		* Model: [RE2](https://arxiv.org/abs/1908.00300)
-		
-			* [\<Notebook> RE2](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_birnn.ipynb)
-
- 				-> 87.7% Testing Accuracy
-
-			* [\<Notebook> RE3](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn.ipynb)
-
- 				-> 88.0% Testing Accuracy
-
-			* [\<Notebook> RE3 + Cyclical LR + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn_label_smooth.ipynb)
-
-				-> 88.3% Testing Accuracy
-
-		* Model: [BERT](https://arxiv.org/abs/1810.04805)
-
-			* [\<Notebook> BERT (base-uncased)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/bert_finetune.ipynb)
-			
-				-> 90.4% Testing Accuracy
-
-		* Model: [RoBERTa](https://arxiv.org/abs/1907.11692)
-
-			* [\<Notebook> RoBERTa (base)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb)
-			
-				-> 91.1% Testing Accuracy
-
 <img src="https://pic4.zhimg.com/80/v2-a1a86096068c31bbe3480fcb68b9cea7_720w.jpg" height="300">
 
 ```
@@ -455,13 +352,9 @@
 
 			These results are higher than [the repo here](https://github.com/terrifyzhao/text_matching) and [the repo here](https://github.com/liuhuanyong/SiameseSentenceSimilarity)
 
-		* TensorFlow 2 + [transformers](https://github.com/huggingface/transformers)
-
 			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/bert_finetune.ipynb)
 			
 			 	-> 83.8% Testing Accuracy
-
-		* TensorFlow 1 + [bert4keras](https://github.com/bojone/bert4keras)
 		
 			* [\<Notebook> BERT (chinese_wwm)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/text_matching/chinese/main/bert_chinese_wwm.ipynb)
 			
