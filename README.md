@@ -479,9 +479,7 @@
 
 			However, dense retrieval is more robust to capture the contextual information
 
-		* [\<Notebook> Dense Retrieval (Bert + Default Pooling)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb)
-
-		* [\<Notebook> Dense Retrieval (Bert + Mean Pooling)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub_mean.ipynb)
+		* Dense Retrieval (Bert) &nbsp; &nbsp; [\<Notebook> Default Pooling](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb) &nbsp; &nbsp; [\<Notebook> Mean Pooling](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub_mean.ipynb)
 
 		   Case Analysis
 
