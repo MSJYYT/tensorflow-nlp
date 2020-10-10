@@ -44,6 +44,8 @@
 			3. we show bert (pretrained model) is able to further improve the accuracy to 84.75%
 
 			4. we show char-level re2 actually performs better than word-level re2 on this dataset
+
+			   word segmentation is not necessary on this dataset
 			```
 
 	* [Intent Detection and Slot Filling（意图检测与槽位填充）](https://github.com/zhedongzheng/finch#intent-detection-and-slot-filling)
@@ -250,7 +252,7 @@
 
 			* [\<Notebook> CNN + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/cnn_attention_bt_char_label_smooth_cyclical.ipynb)
 			
-				-> 91.7 % Testing Accuracy
+				-> 91.8 % Testing Accuracy
 
 	* Model: [Sliced RNN](https://arxiv.org/abs/1807.02291)
 
