@@ -239,44 +239,40 @@
 			 	-> 90.7% Testing Accuracy
 
 	* Model: [FastText](https://arxiv.org/abs/1607.01759)
+		
+		* [\<Notebook> Unigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/unigram.ipynb)
+
+			-> 87.3% Testing Accuracy
+
+		* [\<Notebook> Bigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb)
+
+			-> 89.8% Testing Accuracy
+
+		* [\<Notebook> Autotune FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb)
+
+			-> 90.1% Testing Accuracy
 	
-		* [Facebook Official Release](https://github.com/facebookresearch/fastText)
-		
-			* [\<Notebook> Unigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/unigram.ipynb)
-		
-		 		-> 87.3% Testing Accuracy
-		
-			* [\<Notebook> Bigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb)
+		```
+		Back-Translation increases training data from 25000 to 50000
 
-				-> 89.8% Testing Accuracy
+		which is done by "english -> french -> english" translation
+		```
 
-			* [\<Notebook> Autotune FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb)
+		```python
+		from googletrans import Translator
 
-				-> 90.1% Testing Accuracy
+		translator = Translator()
+
+		translated = translator.translate(text, src='en', dest='fr').text
+
+		back = translator.translate(translated, src='fr', dest='en').text
+		```
+	
+	* Model: [TextCNN](https://arxiv.org/abs/1408.5882)
 
 		* TensorFlow 2
 
-			* [\<Notebook> Unigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/fasttext_unigram.ipynb)
-				
-			 	-> 89.1 % Testing Accuracy
-				
-			* [\<Notebook> Bigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/fasttext_bigram.ipynb)
-	
-	 			-> 90.2 % Testing Accuracy
-	
-	* Model: [Feedforward Attention](https://arxiv.org/abs/1512.08756)
-
-		* TensorFlow 2
-
-			* [\<Notebook> Feedforward Attention](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/attention_linear.ipynb)
-			
-			 	-> 89.5 % Testing Accuracy
-			
-			* [\<Notebook> CNN + Feedforward Attention](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/attention_conv.ipynb)
-
-				-> 90.7 % Testing Accuracy
-
-			* [\<Notebook> CNN + Feedforward Attention + Back-Translation + Char Embedding + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/cnn_attention_bt_char_label_smooth_cyclical.ipynb)
+			* [\<Notebook> CNN + Attention](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/cnn_attention_bt_char_label_smooth_cyclical.ipynb)
 			
 				-> 91.7 % Testing Accuracy
 
@@ -284,39 +280,7 @@
 
 		* TensorFlow 2
 
-			* [\<Notebook> Sliced LSTM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/sliced_rnn.ipynb)
-
- 				-> 91.4 % Testing Accuracy
-
-			* [\<Notebook> Sliced LSTM + Back-Translation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/sliced_rnn_bt.ipynb)
-
- 				-> 91.7 % Testing Accuracy
-				
-				```
-				Back-Translation increases training data from 25000 to 50000
-
-				which is done by "english -> french -> english" translation
-				```
-
-				```python
-				from googletrans import Translator
-
-				translator = Translator()
-
-				translated = translator.translate(text, src='en', dest='fr').text
-				
-      			back = translator.translate(translated, src='fr', dest='en').text
-				```
-
-			* [\<Notebook> Sliced LSTM + Back-Translation + Char Embedding](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/sliced_rnn_bt_char.ipynb)
-
- 				-> 92.3 % Testing Accuracy
-
-			* [\<Notebook> Sliced LSTM + Back-Translation + Char Embedding + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/sliced_rnn_bt_char_label_smooth.ipynb)
-			
-				-> 92.5 % Testing Accuracy
-
-			* [\<Notebook> Sliced LSTM + Back-Translation + Char Embedding + Label Smoothing + Cyclical LR](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/sliced_rnn_bt_char_label_smooth_clr.ipynb)
+			* [\<Notebook> Sliced LSTM](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/sliced_rnn_bt_char_label_smooth_clr.ipynb)
 			
 				-> 92.6 % Testing Accuracy
 
