@@ -348,9 +348,7 @@
 
  				-> 83.8% Testing Accuracy
 
-				The result of RE2 actually catches up with Bert base below (both 83.8%)
-
-			These results are higher than [the repo here](https://github.com/terrifyzhao/text_matching) and [the repo here](https://github.com/liuhuanyong/SiameseSentenceSimilarity)
+			These results are higher than [this repo](https://github.com/terrifyzhao/text_matching) and [this repo](https://github.com/liuhuanyong/SiameseSentenceSimilarity)
 
 			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/bert_finetune.ipynb)
 			
