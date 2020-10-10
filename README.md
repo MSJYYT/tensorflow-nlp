@@ -68,13 +68,15 @@
 
 	* [Retrieval Dialog（检索式对话）](https://github.com/zhedongzheng/finch#retrieval-dialog)
 
-		* Sparse Retrieval
+		* ElasticSearch
 
-		* Dense Retrieval
-		
-		* Dense Retrieval (Bert)
-		
-		* Dense Retrieval (Cross-lingual)
+			* Sparse Retrieval
+
+			* Dense Retrieval
+
+			* Dense Retrieval (Bert)
+
+			* Dense Retrieval (Cross-lingual)
 
 	* [Generative Dialog（生成式对话）](https://github.com/zhedongzheng/finch#generative-dialog)
 
