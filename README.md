@@ -229,54 +229,32 @@
 	* TensorFlow 2
 
 		* Model: [DAM](https://arxiv.org/abs/1606.01933)
-
-			* [\<Notebook> DAM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/dam.ipynb)
-
- 				-> 85.3% Testing Accuracy
-
-			 	The accuracy of this implementation is higher than [UCL MR Group](http://isabelleaugenstein.github.io/papers/JTR_ACL_demo_paper.pdf)'s implementation (84.6%)
+		
+		  [\<Notebook> DAM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/dam.ipynb) -> 85.3% Testing Accuracy
 
 		* Model: [Match Pyramid](https://arxiv.org/abs/1602.06359)
-
-			* [\<Notebook> Pyramid](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/pyramid_multi_attn.ipynb)
-
- 				-> 87.1% Testing Accuracy
-
-	 		 	The accuracy of this model is 0.3% below ESIM, however the speed is 1x faster than ESIM
+		  
+		  [\<Notebook> Pyramid](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/pyramid_multi_attn.ipynb) -> 87.1% Testing Accuracy
 
 		* Model: [ESIM](https://arxiv.org/abs/1609.06038)
-
-			* [\<Notebook> ESIM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/esim.ipynb)
-
- 				-> 87.4% Testing Accuracy
-
-			 	The accuracy of this implementation is comparable to [UCL MR Group](http://isabelleaugenstein.github.io/papers/JTR_ACL_demo_paper.pdf)'s implementation (87.2%)
+		
+		  [\<Notebook> ESIM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/esim.ipynb) -> 87.4% Testing Accuracy
 
 		* Model: [RE2](https://arxiv.org/abs/1908.00300)
 
-			* [\<Notebook> RE2](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_birnn.ipynb)
+		  [\<Notebook> RE2](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_birnn.ipynb) -> 87.7% Testing Accuracy
 
- 				-> 87.7% Testing Accuracy
+		  [\<Notebook> RE3](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn.ipynb) -> 88.0% Testing Accuracy
 
-			* [\<Notebook> RE3](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn.ipynb)
-
- 				-> 88.0% Testing Accuracy
-
-			* [\<Notebook> RE3 + Cyclical LR + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn_label_smooth.ipynb)
-
-				-> 88.3% Testing Accuracy
+		  [\<Notebook> RE3 + Cyclical LR + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn_label_smooth.ipynb) -> 88.3% Testing Accuracy
 
 		* Model: [BERT](https://arxiv.org/abs/1810.04805)
-
-			* [\<Notebook> BERT (base-uncased)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/bert_finetune.ipynb)
-
-				-> 90.4% Testing Accuracy
+		
+		  [\<Notebook> BERT (base-uncased)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/bert_finetune.ipynb) -> 90.4% Testing Accuracy
 
 		* Model: [RoBERTa](https://arxiv.org/abs/1907.11692)
-
-			* [\<Notebook> RoBERTa (base)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb)
-
-				-> 91.1% Testing Accuracy
+		
+		  [\<Notebook> RoBERTa (base)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb) -> 91.1% Testing Accuracy
 
 <img src="https://pic4.zhimg.com/80/v2-a1a86096068c31bbe3480fcb68b9cea7_720w.jpg" height="300">
 
