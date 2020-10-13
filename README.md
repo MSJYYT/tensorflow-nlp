@@ -313,6 +313,8 @@
 			
 			 	-> 83.8% Testing Accuracy
 		
+		* TensorFlow 1
+		
 			* [\<Notebook> BERT (chinese_wwm)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/text_matching/chinese/main/bert_chinese_wwm.ipynb)
 			
 			 	-> 84.75% Testing Accuracy
@@ -375,9 +377,9 @@
 
 	* Joint Intent-Slots
 
-		* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
+		* TensorFlow 2
 
-			* TensorFlow 2
+			* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
 
 				* [\<Notebook> Bi-GRU](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr.ipynb) 
 
@@ -387,9 +389,7 @@
 
 				  97.2% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
 
-		* Model: [Transformer](https://arxiv.org/abs/1706.03762)
-
-			* TensorFlow 2
+			* Model: [Transformer](https://arxiv.org/abs/1706.03762)
 
 				* [\<Notebook> 2-layer Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) 
 
@@ -405,9 +405,9 @@
 
 			Time-weighting and Time-mixing strategies are borrowed from [this repo](https://github.com/BlinkDL/minGPT-tuned), which are proved to be effective here
 
-		* Model: [ELMO Embedding](https://arxiv.org/abs/1802.05365)
+		* TensorFlow 1
 
-			* TensorFlow 1
+			* Model: [ELMO Embedding](https://arxiv.org/abs/1802.05365)
 
 				* [\<Notebook> ELMO + Bi-GRU](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/spoken_language_understanding/atis/main/elmo_o1_bigru.ipynb) 
 
