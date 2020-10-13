@@ -433,7 +433,7 @@
 			| --- | --- | --- |
 			| Q: 热死了 | Q: 想死你了 A: 我也想死你了 | Q: 好热 A: 对啊, 热死人了 |
 
-			As can be seen here, 'split by chars' can yield errors but 'split by words' not
+			As can be seen here, 'split by words' is more robust than 'split by chars'
 
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
