@@ -24,11 +24,7 @@
 
 			* Sparse Retrieval
 
-			* Dense Retrieval
-
-			* Dense Retrieval (Bert)
-
-			* Dense Retrieval (Cross-lingual)
+			* Dense Retrieval (Bert, Cross-lingual)
 
 	* [Generative Dialog（生成式对话）](https://github.com/zhedongzheng/finch#generative-dialog)
 
