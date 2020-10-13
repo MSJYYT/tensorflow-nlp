@@ -315,7 +315,7 @@
 		
 		* TensorFlow 1
 		
-			* [\<Notebook> BERT (chinese_wwm)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/text_matching/chinese/main/bert_chinese_wwm.ipynb) | weights downloaded from [here](https://github.com/ymcui/Chinese-BERT-wwm)
+			* [\<Notebook> BERT (chinese_wwm)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/text_matching/chinese/main/bert_chinese_wwm.ipynb) &nbsp; &nbsp; [weights](https://github.com/ymcui/Chinese-BERT-wwm)
 			
 			 	-> 84.75% Testing Accuracy
 
@@ -423,7 +423,17 @@
 
 	* Engine: Elasticsearch
 
-		* [\<Notebook> Sparse (Default) Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve.ipynb)
+		* [\<Notebook> Sparse Retrieval (split by chars)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve.ipynb)
+
+		* [\<Notebook> Sparse Retrieval (split by words)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve_seg.ipynb)
+
+			Case Analysis
+
+			| 问题 / 模型回复 | split by chars | split by words |
+			| --- | --- | --- |
+			| Q: 热死了 | Q: 想死你了 A: 我也想死你了 | Q: 好热 A: 对啊, 热死人了 |
+
+			As can be seen here, 'split by chars' can yield errors but 'split by words' not
 
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
@@ -432,9 +442,8 @@
 			| 问题 / 模型回复 | Sparse Retrieval | Dense Retrieval |
 			| --- | --- | --- |
 			| Q: 我喜欢你 | Q: 我喜欢看书 A: 书是人类进步的阶梯 | Q: 我爱你 A: 我也爱你 |
-			| Q: 热死了 | Q: 想死你了 A: 我也想死你了 | Q: 好热 A: 对啊, 热死人了 |
 
-			As can be seen here, sparse retrieval is easy to be disrupted by similar characters
+			As can be seen here, sparse retrieval is easy to be disrupted by similar words
 
 			However, dense retrieval is more robust to capture the contextual information
 
