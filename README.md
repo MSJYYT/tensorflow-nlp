@@ -6,17 +6,17 @@
 
 	* [Text Classification（文本分类）](https://github.com/zhedongzheng/finch#text-classification)
 	
-		* IMDB（English Data）
+		* IMDB（ENG）
 
 	* [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch#text-matching)
 
-		* SNLI（English Data）
+		* SNLI（ENG）
 		
-		* 微众银行智能客服（Chinese Data）
+		* 微众银行智能客服（CHN）
 
 	* [Intent Detection and Slot Filling（意图检测与槽位填充）](https://github.com/zhedongzheng/finch#intent-detection-and-slot-filling)
 
-		* ATIS（English Data）
+		* ATIS（ENG）
 
 	* [Retrieval Dialog（检索式对话）](https://github.com/zhedongzheng/finch#retrieval-dialog)
 
@@ -24,23 +24,23 @@
 
 			* Sparse Retrieval
 
-			* Dense Retrieval (Bert, Cross-lingual)
+			* Dense Retrieval
 
 	* [Generative Dialog（生成式对话）](https://github.com/zhedongzheng/finch#generative-dialog)
 
-		* Large-scale Chinese Conversation Dataset
+		* Large-scale Chinese Conversation Dataset (CHN)
 
 	* [Multi-turn Dialogue Rewriting（多轮对话改写）](https://github.com/zhedongzheng/finch#multi-turn-dialogue-rewriting)
 
-		* 20k 腾讯 AI 研发数据（Chinese Data）
+		* 20k 腾讯 AI 研发数据（CHN）
 
 	* [Semantic Parsing（语义解析）](https://github.com/zhedongzheng/finch#semantic-parsing)
 	
-		* Facebook AI Research Data（English Data）
+		* Facebook AI Research Data（ENG）
 	
 	* [Multi-hop Question Answering（多跳问题回答）](https://github.com/zhedongzheng/finch#multi-hop-question-answering)
 	
-		* bAbI（Engish Data）
+		* bAbI（ENG）
 		
 	* [Text Processing Tools（文本处理工具）](https://github.com/zhedongzheng/finch#text-processing-tools)
 
@@ -431,9 +431,7 @@
 
 			| 问题 / 模型回复 | split by chars | split by words |
 			| --- | --- | --- |
-			| Q: 热死了 | Q: 想死你了 A: 我也想死你了 | Q: 好热 A: 对啊, 热死人了 |
-
-			As can be seen here, 'split by words' is more robust than 'split by chars'
+			| Q: 热死了 | Q: 热死了 -> Q: 想死你了 | Q: 热死了 -> Q: 好热 |
 
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
@@ -441,11 +439,7 @@
 
 			| 问题 / 模型回复 | Sparse Retrieval | Dense Retrieval |
 			| --- | --- | --- |
-			| Q: 我喜欢你 | Q: 我喜欢看书 A: 书是人类进步的阶梯 | Q: 我爱你 A: 我也爱你 |
-
-			As can be seen here, sparse retrieval is easy to be disrupted by similar words
-
-			However, dense retrieval is more robust to capture the contextual information
+			| Q: 我喜欢你 | Q: 我喜欢你 -> Q: 我喜欢看书 | Q: 我喜欢你 -> Q: 我爱你 |
 
 		* Dense Retrieval (Bert) &nbsp; &nbsp; [\<Notebook> Default Pooling](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb) &nbsp; &nbsp; [\<Notebook> Mean Pooling](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub_mean.ipynb)
 
@@ -453,9 +447,7 @@
 
 			| 问题 / 模型回复 | Default Pooling | Mean Pooling |
 			| --- | --- | --- |
-			| Q: 热死了 | Q: 笑死我了 A: 瞧把你开心的 | Q: 好热 A: 对啊, 热死人了 |
-
-			As can be seen here, mean pooling retrieves correct qa pair while default bert pooling does not
+			| Q: 热死了 | Q: 热死了 -> Q: 笑死我了 | Q: 热死了 -> Q: 好热 |
 
 		* [\<Notebook> Dense Retrieval (Cross-lingual)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
 
@@ -565,21 +557,17 @@
 
 		 <img src="https://pic4.zhimg.com/80/v2-8cd8481856f101af45501078b04456bb_720w.jpg">
 
-	* Model: [DistMult](https://arxiv.org/abs/1412.6575)
+	* TensorFlow 2
 
-		* TensorFlow 2
+		* Model: [DistMult](https://arxiv.org/abs/1412.6575)
 
 			* [\<Notebook> DistMult -> 79.7% MRR on Testing Data](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/knowledge_graph_completion/wn18/main/distmult_1-N_clr.ipynb)
 	
-	* Model: [TuckER](https://arxiv.org/abs/1901.09590)
-	
-		* TensorFlow 2
+		* Model: [TuckER](https://arxiv.org/abs/1901.09590)
 		
 			* [\<Notebook> TuckER -> 88.5% MRR on Testing Data](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/knowledge_graph_completion/wn18/main/tucker_1-N_clr.ipynb)
 	
-	* Model: [ComplEx](https://arxiv.org/abs/1606.06357)
-
-		* TensorFlow 2
+		* Model: [ComplEx](https://arxiv.org/abs/1606.06357)
 
 			* [\<Notebook> ComplEx -> 93.8% MRR on Testing Data](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/knowledge_graph_completion/wn18/main/complex_1-N_clr.ipynb)
 
