@@ -423,16 +423,20 @@
 
 	* Engine: Elasticsearch
 
-		* [\<Notebook> Sparse Retrieval (split by chars)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve.ipynb)
+		* [\<Notebook> Sparse Retrieval (split by char)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve.ipynb)
 
-		* [\<Notebook> Sparse Retrieval (split by words)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve_seg.ipynb)
+		* [\<Notebook> Sparse Retrieval (split by word)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/default_retrieve_seg.ipynb)
 
 			Case Analysis
 
-			| 问题 / 模型回复 | split by chars | split by words |
-			| --- | --- | --- |
-			| Q: 热死了 | Q: 热死了 -> Q: 想死你了 | Q: 热死了 -> Q: 好热 |
+			-> split by char: &nbsp; 热死了 &nbsp; -> &nbsp; 热 &nbsp; 死 &nbsp; 了
+			
+			-> split by word: &nbsp; 热死了 &nbsp; -> &nbsp; 热 &nbsp; 死了
 
+			| 问题 / 模型回复 | split by char | split by word |
+			| --- | --- | --- |
+			| Q: 热死了 | Q: 热死了 -> Q: 想死你了 | Q: 热死了 -> Q: 热 |
+			
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
 		   Case Analysis
@@ -447,7 +451,7 @@
 
 			| 问题 / 模型回复 | Default Pooling | Mean Pooling |
 			| --- | --- | --- |
-			| Q: 热死了 | Q: 热死了 -> Q: 笑死我了 | Q: 热死了 -> Q: 好热 |
+			| Q: 热死了 | Q: 热死了 -> Q: 笑死我了 | Q: 热死了 -> Q: 热 |
 
 		* [\<Notebook> Dense Retrieval (Cross-lingual)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
 
