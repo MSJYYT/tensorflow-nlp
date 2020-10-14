@@ -437,6 +437,8 @@
 			| --- | --- | --- |
 			| Q: 热死了 | Q: 热死了 -> Q: 想死你了 | Q: 热死了 -> Q: 热 |
 			
+			split by word is more robust
+			
 		* [\<Notebook> Dense Retrieval](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve.ipynb)
 
 		   Case Analysis
@@ -444,14 +446,10 @@
 			| 问题 / 模型回复 | Sparse Retrieval | Dense Retrieval |
 			| --- | --- | --- |
 			| Q: 我喜欢你 | Q: 我喜欢你 -> Q: 我喜欢看书 | Q: 我喜欢你 -> Q: 我爱你 |
+			
+			dense retrieval is more robust
 
-		* Dense Retrieval (Bert) &nbsp; &nbsp; [\<Notebook> Default Pooling](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb) &nbsp; &nbsp; [\<Notebook> Mean Pooling](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub_mean.ipynb)
-
-		   Case Analysis
-
-			| 问题 / 模型回复 | Default Pooling | Mean Pooling |
-			| --- | --- | --- |
-			| Q: 热死了 | Q: 热死了 -> Q: 笑死我了 | Q: 热死了 -> Q: 热 |
+		* [\<Notebook> Dense Retrieval (Bert)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_bert_hub.ipynb)
 
 		* [\<Notebook> Dense Retrieval (Cross-lingual)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/es/free_chat/main/dense_retrieve_cross_lingual.ipynb)
 
