@@ -367,11 +367,9 @@
 
 		* Model: [Conditional Random Fields](https://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf)
 
-			* [CRFsuite](http://www.chokkan.org/software/crfsuite/) + [pycrfsuite](https://github.com/scrapinghub/python-crfsuite)
+			* [\<Notebook> CRFsuite](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) 
 
-				* [\<Notebook> CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) 
-
-				  92.6% Slot Micro-F1 on Testing Data
+			  92.6% Slot Micro-F1 on Testing Data
 
 	* Joint Intent-Slots
 
