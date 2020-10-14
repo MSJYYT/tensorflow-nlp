@@ -505,11 +505,9 @@
 			  80.4% Exact Match on Testing Data
 			  
 			  ```
-			  Pointer Generator = Pointer Network + Seq2Seq Network
+			  Pointer Generator = (Pointer + Seq2Seq) Network
 			  
-			  This result is quite strong
-			  
-			  which beats all the exact match results in the original paper
+			  surpasses all the EM results in the original paper
 			  
 			  (https://aclweb.org/anthology/D18-1300)
 			  ```
