@@ -595,23 +595,19 @@
 
 * Rule-based System（基于规则的系统）
 	
-	For example, we want to answer the following questions with some car knowledge:
+	For example, we want to answer the following questions with car knowledge:
 	
 	```
-		宝马是什么?  /  what is BMW?
-        	我想了解一下宝马  /  i want to know about the BMW
-        	给我介绍一下宝马  /  please introduce the BMW to me
-		宝马这个牌子的汽车怎么样?  /  how is the car of BMW group?
-        	宝马如何呢?  /  how is the BMW?
-        	宝马汽车好用吗?  /  is BMW a good car to use?
-        	宝马和奔驰比怎么样?  /  how is the BMW compared to the Benz?
-        	宝马和奔驰比哪个好?  /  which one is better, the BMW or the Benz?
-        	宝马和奔驰比哪个更好?  /  which one is even better, the BMW or the Benz?
+		What is BMW?
+        	I want to know about the BMW
+        	Please introduce the BMW to me
+        	How is the BMW?
+        	How is the BMW compared to the Benz?
 	```
 
-	* Tool: [RDFlib](https://github.com/RDFLib/rdflib) + Regular Expression
+	* [\<Notebook> Regular Expression](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/regex.ipynb)
 
-	  [\<Notebook> Example](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/regex.ipynb)
+	* [\<Notebook> Regular Expression + POS Feature](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/python/kbqa/rule_based_qa.ipynb)
 
 ---
 
