@@ -399,7 +399,7 @@
 
 				  97.5% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
 
-			Time-weighting and Time-mixing strategies are borrowed from [this repo](https://github.com/BlinkDL/minGPT-tuned), which are proved to be effective here
+				  Time-weighting and Time-mixing are effective here, idea from [this repo](https://github.com/BlinkDL/minGPT-tuned)
 
 		* TensorFlow 1
 
