@@ -319,13 +319,19 @@
 			
 			 	-> 84.75% Testing Accuracy
 
-	* About word-level vs character-level
+	* Does word segmentation help? &nbsp; (中文分词能帮助提升结果吗)
 
 		-> All above deep models have been implemented on character-level
 
-		-> We have attempted word-level modelling by using [jieba](https://github.com/fxsjy/jieba) to split words
+		-> We have attempted word-level by using [jieba](https://github.com/fxsjy/jieba) to split sentence
 
-		-> but [word-level RE2](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) (82.5% accuracy) does not surpass [char-level RE2](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/re2_cyclical_label_smooth.ipynb) above (83.8%)
+		| Model: RE2 | Word Level (以词为单位) | Character Level (以字为单位) |
+		| --- | --- | --- |
+		| Code | [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) | [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/re2_cyclical_label_smooth.ipynb) |
+		| Vocabulary | 4977 | 1507 |
+		| Accuracy |82.5% | 83.8% |
+		
+		-> The answer is Not on this dataset
 
 ---
 
