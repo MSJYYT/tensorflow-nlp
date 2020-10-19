@@ -289,7 +289,7 @@
 		
 	* Model	
 	
-		These results can be compared to [this repo](https://github.com/terrifyzhao/text_matching) and [this repo](https://github.com/liuhuanyong/SiameseSentenceSimilarity) on the same dataset
+		These results can be compared to [this benchmark](https://github.com/wangle1218/deep_text_matching) since the dataset is the same
 	
 		* TensorFlow 2
 	
