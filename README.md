@@ -256,7 +256,7 @@
 		
 		  [\<Notebook> RoBERTa (base)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb) -> 91.1% Testing Accuracy
 
-<img src="https://pic4.zhimg.com/80/v2-a1a86096068c31bbe3480fcb68b9cea7_720w.jpg" height="300">
+<img src="https://github.com/wangle1218/deep_text_matching/blob/master/pic/%E6%8D%95%E8%8E%B76.PNG">
 
 ```
 └── finch/tensorflow2/text_matching/chinese
