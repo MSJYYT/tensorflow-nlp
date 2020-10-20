@@ -256,7 +256,13 @@
 		
 		  [\<Notebook> RoBERTa (base)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb) -> 91.1% Testing Accuracy
 
-<img src="https://github.com/wangle1218/deep_text_matching/blob/master/pic/%E6%8D%95%E8%8E%B76.PNG">
+| Question 1 | Question 2 | Matched |
+| --- | --- | --- |
+| 微信消费算吗 | 还有多少钱没还 | 0 |
+| 电话更改了 | 电话号码可以更改吗 | 1 |
+| 还款银行怎么修改 | 怎么更改还款卡 | 1 |
+| 为什么我每次都提前还款了最后却不给我贷款了 | 30号我一次性还清可以不 | 0 |
+| 请问下我可以提额 |当月还清了，当月能提高额度吗 | 0 |
 
 ```
 └── finch/tensorflow2/text_matching/chinese
