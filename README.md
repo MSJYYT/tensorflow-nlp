@@ -214,44 +214,16 @@
 		* [\<Text File>: Data Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/data/train.txt)
 
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/vocab/word.txt)
-
-	* TensorFlow 2
-
-		* Model: [DAM](https://arxiv.org/abs/1606.01933)
-		
-		  [\<Notebook> DAM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/dam.ipynb) -> 85.3% Testing Accuracy
-
-		* Model: [Match Pyramid](https://arxiv.org/abs/1602.06359)
 		  
-		  [\<Notebook> Pyramid](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/pyramid_multi_attn.ipynb) -> 87.1% Testing Accuracy
-
-		* Model: [ESIM](https://arxiv.org/abs/1609.06038)
-		
-		  [\<Notebook> ESIM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/esim.ipynb) -> 87.4% Testing Accuracy
-
-		* Model: [RE2](https://arxiv.org/abs/1908.00300)
-
-		  [\<Notebook> RE2](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_birnn.ipynb) -> 87.7% Testing Accuracy
-
-		  [\<Notebook> RE3](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn.ipynb) -> 88.0% Testing Accuracy
-
-		  [\<Notebook> RE3 + Cyclical LR + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn_label_smooth.ipynb) -> 88.3% Testing Accuracy
-
-		* Model: [BERT](https://arxiv.org/abs/1810.04805)
-		
-		  [\<Notebook> BERT (base-uncased)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/bert_finetune.ipynb) -> 90.4% Testing Accuracy
-
-		* Model: [RoBERTa](https://arxiv.org/abs/1907.11692)
-		
-		  [\<Notebook> RoBERTa (base)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb) -> 91.1% Testing Accuracy
-
-| Question 1 | Question 2 | Matched |
-| --- | --- | --- |
-| 微信消费算吗 | 还有多少钱没还 | 0 |
-| 电话更改了 | 电话号码可以更改吗 | 1 |
-| 还款银行怎么修改 | 怎么更改还款卡 | 1 |
-| 为什么我每次都提前还款了最后却不给我贷款了 | 30号我一次性还清可以不 | 0 |
-| 请问下我可以提额 |当月还清了，当月能提高额度吗 | 0 |
+	| Model | Reference | Env | Testing Accuracy |
+	| --- | --- | --- | --- |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/dam.ipynb) | [DAM](https://arxiv.org/abs/1606.01933) | TF2 | 85.3% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/pyramid_multi_attn.ipynb) | [Match Pyramid](https://arxiv.org/abs/1602.06359) | TF2 | 87.1% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/esim.ipynb) | [ESIM](https://arxiv.org/abs/1609.06038) | TF2 | 87.4% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_birnn.ipynb) | [RE2](https://arxiv.org/abs/1908.00300) | TF2 | 87.7% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/re2_3_birnn_label_smooth.ipynb) | RE3 | TF2 | 88.3% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/bert_finetune.ipynb) | [BERT](https://arxiv.org/abs/1810.04805) | TF2 | 90.4% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/roberta_finetune.ipynb) | [RoBERTa](https://arxiv.org/abs/1907.11692) | TF2 | 91.1% |
 
 ```
 └── finch/tensorflow2/text_matching/chinese
@@ -282,51 +254,16 @@
 		
 		* [\<Text File>: Vocabulary](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/vocab/char.txt)
 		
-	* Model	
-	
-		These results can be compared to [this benchmark](https://github.com/wangle1218/deep_text_matching) since the dataset is the same
-	
-		* TensorFlow 2
-	
-			* [\<Notebook> ESIM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/esim.ipynb)
+	* Model	(can be compared to [this benchmark](https://github.com/wangle1218/deep_text_matching) since the dataset is the same)
 
- 				-> 82.5% Testing Accuracy
-
-			* [\<Notebook> Pyramid](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/pyramid.ipynb)
-
- 				-> 82.7% Testing Accuracy
-
-			* [\<Notebook> RE2](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/re2.ipynb)
-
- 				-> 82.9% Testing Accuracy
-
-			* [\<Notebook> RE2 + Cyclical LR + Label Smoothing](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/re2_cyclical_label_smooth.ipynb)
-
- 				-> 83.8% Testing Accuracy
-
-			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/bert_finetune.ipynb)
-			
-			 	-> 83.8% Testing Accuracy
-		
-		* TensorFlow 1
-		
-			* [\<Notebook> BERT (chinese_wwm)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/text_matching/chinese/main/bert_chinese_wwm.ipynb)
-			
-			 	-> 84.75% Testing Accuracy
-
-	* Does word segmentation help? &nbsp; (中文分词能帮助提升结果吗)
-
-		-> All above deep models have been implemented on character-level
-
-		-> We have attempted word-level by using [jieba](https://github.com/fxsjy/jieba) to split sentence
-
-		| Model: RE2 | Word Level (以词为单位) | Character Level (以字为单位) |
-		| --- | --- | --- |
-		| Code | [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) | [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/re2_cyclical_label_smooth.ipynb) |
-		| Vocabulary | 4977 | 1507 |
-		| Accuracy |82.5% | 83.8% |
-		
-		-> The answer is Not on this dataset
+	| Model | Reference | Env | Split by | Testing Accuracy |
+	| --- | --- | --- | --- | --- |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) | [RE2](https://arxiv.org/abs/1908.00300) | TF2 | Word | 82.5% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/esim.ipynb) | [ESIM](https://arxiv.org/abs/1609.06038) | TF2 | Char | 82.5% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/pyramid.ipynb) | [Match Pyramid](https://arxiv.org/abs/1602.06359) | TF2 | Char | 82.7% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/re2_cyclical_label_smooth.ipynb) | [RE2](https://arxiv.org/abs/1908.00300) | TF2 | Char | 83.8% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/bert_finetune.ipynb) | [BERT](https://arxiv.org/abs/1810.04805) | TF2 | Char | 83.8% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow1/text_matching/chinese/main/bert_chinese_wwm.ipynb) | [BERT-wwm](https://github.com/ymcui/Chinese-BERT-wwm) | TF1 + [bert4keras](https://github.com/bojone/bert4keras) | Char | 84.75% |
 
 ---
 
