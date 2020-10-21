@@ -303,7 +303,7 @@
 
 	| Code | Model | Layer | Env | Testing Intent (Accuracy) | Testing Slot (Micro-F1) |
 	| --- | --- | --- | --- | --- | --- |
-	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) | [Conditional Random Fields](https://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf) | - | [pyCRFsuite](https://github.com/scrapinghub/python-crfsuite) | - | 92.6% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) | [CRF](https://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf) | - | [pyCRFsuite](https://github.com/scrapinghub/python-crfsuite) | - | 92.6% |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr.ipynb) | [Bi-GRU](https://www.ijcai.org/Proceedings/16/Papers/425.pdf) | - | TF2 | 97.4% | 95.4% |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr_crf.ipynb) | [Bi-GRU](https://www.ijcai.org/Proceedings/16/Papers/425.pdf) | + CRF | TF2 | 97.2% | 95.8% |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) | [Transformer](https://arxiv.org/abs/1706.03762) | - | TF2 | 96.5% | 95.5% |
