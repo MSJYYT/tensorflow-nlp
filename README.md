@@ -119,18 +119,12 @@
 			 	-> 90.7% Testing Accuracy
 
 	* Model: [FastText](https://arxiv.org/abs/1607.01759)
-		
-		* [\<Notebook> Unigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/unigram.ipynb)
-
-			-> 87.3% Testing Accuracy
-
-		* [\<Notebook> Bigram FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb)
-
-			-> 89.8% Testing Accuracy
-
-		* [\<Notebook> Autotune FastText](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb)
-
-			-> 90.1% Testing Accuracy
+	
+			| FastText | Setting | Testing Accuracy |
+			| --- | --- | --- |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/unigram.ipynb) | Unigram | 87.3% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb) | Bigram | 89.8% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb) | Autotune | 90.1% |
 	
 		```
 		Back-Translation increases training data from 25000 to 50000
