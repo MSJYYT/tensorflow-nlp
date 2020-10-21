@@ -250,7 +250,7 @@
 
 	* [\<Notebook>: Make Data & Vocabulary](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/data/make_data.ipynb)
 		
-		* [\<Text File>: Data Example](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/data/train.csv)
+		* [\<Text File>: Data Example](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/data/train.csv) (数据示例)
 		
 		* [\<Text File>: Vocabulary](https://github.com/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/vocab/char.txt)
 		
@@ -300,56 +300,6 @@
 	* [\<Notebook>: Make Vocabulary](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/data/make_data.ipynb)
 	
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/vocab/word.txt)
-
-	* Only Slots
-
-		* Model: [Conditional Random Fields](https://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf)
-
-			* [\<Notebook> CRFsuite](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) 
-
-			  92.6% Slot Micro-F1 on Testing Data
-
-	* Joint Intent-Slots
-
-		* TensorFlow 2
-
-			* Model: [Bi-directional RNN](https://www.ijcai.org/Proceedings/16/Papers/425.pdf)
-
-				* [\<Notebook> Bi-GRU](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr.ipynb) 
-
-				  97.4% Intent Acc, 95.4% Slot Micro-F1 on Testing Data
-
-				* [\<Notebook> Bi-GRU + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr_crf.ipynb) 
-
-				  97.2% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
-
-			* Model: [Transformer](https://arxiv.org/abs/1706.03762)
-
-				* [\<Notebook> 2-layer Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) 
-
-				  96.5% Intent Acc, 95.5% Slot Micro-F1 on Testing Data
-
-				* [\<Notebook> 2-layer Transformer + Time-weighting](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_weight.ipynb) 
-
-				  97.2% Intent Acc, 95.6% Slot Micro-F1 on Testing Data
-
-				* [\<Notebook> 2-layer Transformer + Time-mixing](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_mixing.ipynb) 
-
-				  97.5% Intent Acc, 95.8% Slot Micro-F1 on Testing Data
-
-				  Time-weighting and Time-mixing are effective here, idea from [this repo](https://github.com/BlinkDL/minGPT-tuned)
-
-		* TensorFlow 1
-
-			* Model: [ELMO Embedding](https://arxiv.org/abs/1802.05365)
-
-				* [\<Notebook> ELMO + Bi-GRU](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/spoken_language_understanding/atis/main/elmo_o1_bigru.ipynb) 
-
-				  97.5% Intent Acc, 96.1% Slot Micro-F1 on Testing Data
-
-				* [\<Notebook> ELMO + Bi-GRU + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/spoken_language_understanding/atis/main/elmo_o1_bigru_crf.ipynb) 
-
-				  97.3% Intent Acc, 96.3% Slot Micro-F1 on Testing Data
 
 	| Code | Model | Layer | Env | Testing Intent (Accuracy) | Testing Slot (Micro-F1) |
 	| --- | --- | --- | --- | --- | --- |
