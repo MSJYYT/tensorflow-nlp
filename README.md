@@ -99,24 +99,15 @@
 	* Model: TF-IDF + Logistic Regression
 			
 		* Sklearn
-		
-			* [\<Notebook> Unigram + TF + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_false.ipynb)
-			
-			 	-> 88.3% Testing Accuracy
-				
-				-> [PySpark](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/text_classification/imdb/tfidf_lr.ipynb) Equivalent
-			
-			* [\<Notebook> Unigram + TF (binary) + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true.ipynb)
-			
-			 	-> 88.8% Testing Accuracy
 
-			* [\<Notebook> Bigram + TF (binary) + IDF + Logistic Regression](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true_bigram.ipynb)
-			
-			 	-> 89.6% Testing Accuracy
+			| Logistic Regression | Binary TF | NGram Range | Knowledge Distillation | Testing Accuracy |
+			| --- | --- | --- | --- | --- |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_false.ipynb) | False | (1, 1) | False | 88.3% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true.ipynb) | True | (1, 1) | False | 88.8% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true_bigram.ipynb) | True | (1, 2) | False | 89.6% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/lr_know_dist.ipynb) | True | (1, 2) | True | 90.7% |
 
-			* [\<Notebook> Bigram + TF (binary) + IDF + Logistic Regression + Knowledge Distillation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/lr_know_dist.ipynb)
-			
-			 	-> 90.7% Testing Accuracy
+			-> [PySpark](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/text_classification/imdb/tfidf_lr.ipynb) Equivalent
 
 	* Model: [FastText](https://arxiv.org/abs/1607.01759)
 	
@@ -126,21 +117,21 @@
 		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/bigram.ipynb) | Bigram | 89.8% |
 		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/framework/official_fasttext/text_classification/imdb/autotune.ipynb) | Autotune | 90.1% |
 	
-		```
-		Back-Translation increases training data from 25000 to 50000
+	```
+	Back-Translation increases training data from 25000 to 50000
 
-		which is done by "english -> french -> english" translation
-		```
+	which is done by "english -> french -> english" translation
+	```
 
-		```python
-		from googletrans import Translator
+	```python
+	from googletrans import Translator
 
-		translator = Translator()
+	translator = Translator()
 
-		translated = translator.translate(text, src='en', dest='fr').text
+	translated = translator.translate(text, src='en', dest='fr').text
 
-		back = translator.translate(translated, src='fr', dest='en').text
-		```
+	back = translator.translate(translated, src='fr', dest='en').text
+	```
 	
 	* Model: [TextCNN](https://arxiv.org/abs/1408.5882)
 
