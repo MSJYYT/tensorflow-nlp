@@ -96,18 +96,16 @@
 	
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/vocab/word.txt)
 
-	* Model: TF-IDF + Logistic Regression
-			
-		* Sklearn
+	* Model: TF-IDF + Logistic Regression (Sklearn)
 
-			| Logistic Regression | Binary TF | NGram Range | Knowledge Distillation | Testing Accuracy |
-			| --- | --- | --- | --- | --- |
-			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_false.ipynb) | False | (1, 1) | False | 88.3% |
-			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true.ipynb) | True | (1, 1) | False | 88.8% |
-			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true_bigram.ipynb) | True | (1, 2) | False | 89.6% |
-			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/lr_know_dist.ipynb) | True | (1, 2) | True | 90.7% |
+		| Logistic Regression | Binary TF | NGram Range | Knowledge Distillation | Testing Accuracy |
+		| --- | --- | --- | --- | --- |
+		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_false.ipynb) | False | (1, 1) | False | 88.3% |
+		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true.ipynb) | True | (1, 1) | False | 88.8% |
+		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true_bigram.ipynb) | True | (1, 2) | False | 89.6% |
+		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/main/lr_know_dist.ipynb) | True | (1, 2) | True | 90.7% |
 
-			-> [PySpark](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/text_classification/imdb/tfidf_lr.ipynb) Equivalent
+		-> [PySpark](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/spark/text_classification/imdb/tfidf_lr.ipynb) Equivalent
 
 	* Model: [FastText](https://arxiv.org/abs/1607.01759)
 	
