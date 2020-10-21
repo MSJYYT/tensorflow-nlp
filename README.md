@@ -328,7 +328,7 @@
 
 			| 问题 / 拆解方式 | split by char | split by word |
 			| --- | --- | --- |
-			| Q: 热死了 | 热死了 -> 热 &nbsp; / 死 &nbsp; / &nbsp; 了 | 热死了 -> 热 &nbsp; / &nbsp; 死了 |
+			| Q: 热死了 | 热死了 -> 热 &nbsp; / &nbsp; 死 &nbsp; / &nbsp; 了 | 热死了 -> 热 &nbsp; / &nbsp; 死了 |
 
 			| 问题 / 模型回复 | split by char | split by word |
 			| --- | --- | --- |
