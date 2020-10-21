@@ -170,21 +170,12 @@
 
 		* TensorFlow 2 + [transformers](https://github.com/huggingface/transformers)
 
-			* [\<Notebook> BERT (base-uncased) { batch_size=32, max_len=128 }](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_32_128.ipynb)
-			
-			 	-> 92.6% Testing Accuracy
-
-			* [\<Notebook> BERT (base-uncased) { batch_size=16, max_len=200 }](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_16_200.ipynb)
-			
-			 	-> 93.3% Testing Accuracy
-
-			* [\<Notebook> BERT (base-uncased) { batch_size=12, max_len=256 }](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_12_256.ipynb)
-			
-			 	-> 93.8% Testing Accuracy
-
-			* [\<Notebook> BERT (base-uncased) { batch_size=8, max_len=300 }](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_8_300.ipynb)
-			
-			 	-> 94% Testing Accuracy
+			| Bert (base-uncased) | Batch Size | Max Length | Testing Accuracy |
+			| --- | --- | --- | --- |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_32_128.ipynb) | 32 | 128 | 92.6% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_16_200.ipynb) | 16 | 200 | 93.3% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_12_256.ipynb) | 12 | 256 | 93.8% |
+			| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/bert_finetune_8_300.ipynb) | 8 | 300 | 94% |
 
 	* Model: [RoBERTa](https://arxiv.org/abs/1907.11692)
 
