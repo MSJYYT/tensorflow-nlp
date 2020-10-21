@@ -8,6 +8,8 @@
 	
 		* IMDB（ENG）
 
+		* CLUE Emotion Analysis Dataset (CHN)
+
 	* [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch#text-matching)
 
 		* SNLI（ENG）
@@ -191,6 +193,19 @@
 			* [\<Notebook> RoBERTa (base) { batch_size=8, max_len=300 }](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/imdb/main/roberta_finetune_8_300.ipynb)
 			
 			 	-> 94.7% Testing Accuracy
+
+* Task: [CLUE Emotion Analysis Dataset](https://github.com/CLUEbenchmark/CLUEmotionAnalysis2020)（Chinese Data）
+	
+        Training Data: 31728, Testing Data: 3967, Labels: 7
+
+	* Model: [BERT](https://arxiv.org/abs/1810.04805)
+
+		* TensorFlow 2 + [transformers](https://github.com/huggingface/transformers)
+
+			* [\<Notebook> BERT (chinese_base)](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_classification/clue/main/bert_finetune.ipynb)
+			
+			 	-> 61.3% Testing Accuracy
+
 ---
 
 ## Text Matching
