@@ -215,7 +215,7 @@
 
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/vocab/word.txt)
 		  
-	| Model | Reference | Env | Testing Accuracy |
+	| Code | Reference | Env | Testing Accuracy |
 	| --- | --- | --- | --- |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/dam.ipynb) | [DAM](https://arxiv.org/abs/1606.01933) | TF2 | 85.3% |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/snli/main/pyramid_multi_attn.ipynb) | [Match Pyramid](https://arxiv.org/abs/1602.06359) | TF2 | 87.1% |
@@ -256,7 +256,7 @@
 		
 	* Model	(can be compared to [this benchmark](https://github.com/wangle1218/deep_text_matching) since the dataset is the same)
 
-	| Model | Reference | Env | Split by | Testing Accuracy |
+	| Code | Reference | Env | Split by | Testing Accuracy |
 	| --- | --- | --- | --- | --- |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/tensorflow-nlp/blob/master/finch/tensorflow2/text_matching/chinese/main/word_re2_cyclical_label_smooth.ipynb) | [RE2](https://arxiv.org/abs/1908.00300) | TF2 | Word | 82.5% |
 	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_matching/chinese/main/esim.ipynb) | [ESIM](https://arxiv.org/abs/1609.06038) | TF2 | Char | 82.5% |
@@ -350,6 +350,17 @@
 				* [\<Notebook> ELMO + Bi-GRU + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/spoken_language_understanding/atis/main/elmo_o1_bigru_crf.ipynb) 
 
 				  97.3% Intent Acc, 96.3% Slot Micro-F1 on Testing Data
+
+	| Code | Model | Layer | Env | Testing Intent (Accuracy) | Testing Slot (Micro-F1) |
+	| --- | --- | --- | --- | --- | --- |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/python/atis/main/crfsuite.ipynb) | [Conditional Random Fields](https://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf) | - | pycrfsuite | - | 92.6% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr.ipynb) | [Bi-GRU](https://www.ijcai.org/Proceedings/16/Papers/425.pdf) | - | TF2 | 97.4% | 95.4% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/bigru_clr_crf.ipynb) | [Bi-GRU](https://www.ijcai.org/Proceedings/16/Papers/425.pdf) | + CRF | TF2 | 97.2% | 95.8% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer.ipynb) | [Transformer](https://arxiv.org/abs/1706.03762) | - | TF2 | 96.5% | 95.5% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_weight.ipynb)  | Transformer | + [Time Weighting](https://github.com/BlinkDL/minGPT-tuned) | TF2 | 97.2% | 95.6% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/spoken_language_understanding/atis/main/transformer_time_mixing.ipynb)  | Transformer | + [Time Mixing](https://github.com/BlinkDL/minGPT-tuned) | TF2 | 97.5% | 95.8% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/spoken_language_understanding/atis/main/elmo_o1_bigru.ipynb)  | Bi-GRU | + [ELMO](https://arxiv.org/abs/1802.05365) | TF1 | 97.5% | 96.1% |
+	| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow1/spoken_language_understanding/atis/main/elmo_o1_bigru_crf.ipynb)   | Bi-GRU | + ELMO + CRF | TF1 | 97.3% | 96.3% |
 
 ---
 
