@@ -96,9 +96,9 @@
 	
 		* [\<Text File>: Vocabulary Example](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/tensorflow2/text_classification/imdb/vocab/word.txt)
 
-	* Model: TF-IDF + Logistic Regression (Sklearn)
+	* Model: TF-IDF + Logistic Regression ([Sklearn](https://scikit-learn.org/stable/))
 
-		| Logistic Regression | Binary TF | NGram Range | Knowledge Distillation | Testing Accuracy |
+		| Logistic Regression | Binary TF | NGram Range | Knowledge Dist | Testing Accuracy |
 		| --- | --- | --- | --- | --- |
 		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_false.ipynb) | False | (1, 1) | False | 88.3% |
 		| [\<Notebook>](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/finch/sklearn/text_classification/imdb/tfidf_lr_binary_true.ipynb) | True | (1, 1) | False | 88.8% |
